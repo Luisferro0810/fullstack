@@ -1,0 +1,57 @@
+/* selector elemento */
+h1 {
+    color: green;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4rem;
+}
+/* selector clase */
+.section2 {
+color: red;
+text-transform: uppercase;
+text-align: center;
+font-size: 4rem;
+}
+
+/* selector ID */
+#section3 {
+    color: blue;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4rem;
+
+}
+
+/* selector Atributo */
+
+[src=../proyectoinicio/img/Logo-Adecco.png]{
+    margin: 50px;
+}
+
+/* selector cadena descendente */
+
+.section5 h4{
+    color: pink;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+/* selctor todos los hijos */
+
+.section6>h5{
+    color: yellow;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4rem;
+}
+
+/* selector multiple */
+
+.section7 h3, .section7 h6{
+    color: blueviolet;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4rem;
+}

@@ -1,8 +1,24 @@
+ /* root sirve para crear una variable para todo el codigo */
+ :root{
+    --colorPrincipal: #F76666;
+    --colorSecundario: #02052f;
+    /*tipo de fuente de google font (ejemplo)  --fuentePrincipal: 'Skranji', cursive;*/
+    --fuentePrincipal: 'Open Sans', sans-serif;
+
+}
+ 
  html {
     font-size: 62.5%;
 }
-body  { }
- 
+ /* NOta: si lo aplicas dentro de todo el body te cambia completo */
+body  { 
+   /* font-family: var(--fuentePrincipal);
+    background-color: var(--colorPrincipal); */
+    font-size: 16px;
+    font-family: var(--fuentePrincipal);
+    font-weight:  var();
+}
+ /* Practicas
  h1 {
     color:red;
      background-color:yellow;
@@ -76,5 +92,18 @@ text-align: center;
 #segundoh3 , [src="img/Logo-Adecco.png"]{
     background-color: green;
 }
+
+.zona-centro h1 {
+    background: rgba(248, 102, 102, 0.65);
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 800;
+    padding: 35px;
+    color: #fff;
+}
+
+
+
+
 
 
