@@ -93,14 +93,63 @@ text-align: center;
     background-color: green;
 }
 
-.zona-centro h1 {
-    background: rgba(248, 102, 102, 0.65);
-    margin-bottom: 10px;
-    display: block;
-    font-weight: 800;
-    padding: 35px;
-    color: #fff;
+
+
+/*Estilos genericos*/
+.contenedor {
+    max-width: 87%;
+   /* 
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin: 0% auto 0% auto;distintas formas de poner el margen y ahorrar codigo*/
+    margin: 0 auto;
+    
 }
+
+/*estilos para el Main*/
+.fondoMain {
+    background-image: url(../img/11641893944_banner_zona_centro.png);
+    background-size: cover;
+    background-position: top left;
+}
+.margenDerecho {
+   margin-right: 30%; 
+}
+.zona-centro {
+background-color: rgba(248, 102, 102, 0.65);
+ font-family: var(--fuentePrincipal);
+ margin-bottom: 10px;
+ display: block;
+font-weight: 800;
+font-size: 4.5rem;
+padding: 35px;
+ color: #fff;
+}
+.fondoMain a{
+    
+}
+
+/*Estilos para la seccion de imagen de corporaciones*/
+
+/*estilos seccion cursos*/
+
+/*estilos seccion video*/
+
+/*Estilos seccion para quien son estos cursos*/
+
+/*estilos localizaciones*/
+.localizaciones {
+    background-color: black;
+    color: white
+}
+
+/*estilos contactar*/
+
+
+
+
 
 
 

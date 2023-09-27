@@ -55,3 +55,18 @@ font-size: 4rem;
     text-align: center;
     font-size: 4rem;
 }
+
+
+.contenedorFondoamarillo {
+    height: 300px;
+    background-color: yellow;
+}
+
+.contenedorFondoazul {
+    max-width: 88%;
+    margin: 0 auto;
+}
+.Fondoazul {
+background-color: blue;
+height: 100px;
+}
