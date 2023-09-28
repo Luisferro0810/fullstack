@@ -1,23 +1,25 @@
  /* root sirve para crear una variable para todo el codigo */
- :root{
-    --colorPrincipal: #F76666;
-    --colorSecundario: #02052f;
-    /*tipo de fuente de google font (ejemplo)  --fuentePrincipal: 'Skranji', cursive;*/
-    --fuentePrincipal: 'Open Sans', sans-serif;
+ :root {
+     --colorPrincipal: #F76666;
+     --colorSecundario: #02052f;
+     /*tipo de fuente de google font (ejemplo)  --fuentePrincipal: 'Skranji', cursive;*/
+     --fuentePrincipal: 'Open Sans', sans-serif;
 
-}
- 
+ }
+
  html {
-    font-size: 62.5%;
-}
+     font-size: 62.5%;
+ }
+
  /* NOta: si lo aplicas dentro de todo el body te cambia completo */
-body  { 
-   /* font-family: var(--fuentePrincipal);
+ body {
+     /* font-family: var(--fuentePrincipal);
     background-color: var(--colorPrincipal); */
-    font-size: 16px;
-    font-family: var(--fuentePrincipal);
-    font-weight:  var();
-}
+     font-size: 16px;
+     font-family: var(--fuentePrincipal);
+     font-weight: var();
+ }
+
  /* Practicas
  h1 {
     color:red;
@@ -48,111 +50,236 @@ h5 {
 
 
 /*llamada por clase*/
-.primerh3 {
-color: red;
-text-transform: uppercase;
-text-align: center;
-}
+ .primerh3 {
+     color: red;
+     text-transform: uppercase;
+     text-align: center;
+ }
 
-/*llamada por ID*/
-#segundoh3 {
-    color: red;
-    text-align: center;
-    font-size: 3rem;
-    text-transform: uppercase;
-}
+ /*llamada por ID*/
+ #segundoh3 {
+     color: red;
+     text-align: center;
+     font-size: 3rem;
+     text-transform: uppercase;
+ }
 
-/*LLamada por Elemento*/
-h6 {
-font-size: larger;
-color: brown; 
-font-family: 'Times New Roman', Times, serif; 
-text-align: center;  
-}
+ /*LLamada por Elemento*/
+ h6 {
+     font-size: larger;
+     color: brown;
+     font-family: 'Times New Roman', Times, serif;
+     text-align: center;
+ }
 
-/*Llamada por cadena decendente de elemento*/
-.cadena-elemento p{
-    font-style: italic;
-    text-align: center;
-    color: blueviolet;
-    text-decoration: solid;
-}
+ /*Llamada por cadena decendente de elemento*/
+ .cadena-elemento p {
+     font-style: italic;
+     text-align: center;
+     color: blueviolet;
+     text-decoration: solid;
+ }
 
-/*LLamada por selector atributo*/
-[src="img/Logo-Adecco.png"] { 
-    background-color: black;
-    border-radius: 5rem 5rem 5rem 10rem;
-}
+ /*LLamada por selector atributo*/
+ [src="img/Logo-Adecco.png"] {
+     background-color: black;
+     border-radius: 5rem 5rem 5rem 10rem;
+ }
 
-/*Llamada por selector de "todos los hijos"*/
-.enlaces > a{
- background-color: black;   
-}
-/* LLamada por SELECTOR MULTIPLE  */
-#segundoh3 , [src="img/Logo-Adecco.png"]{
-    background-color: green;
-}
+ /*Llamada por selector de "todos los hijos"*/
+ .enlaces>a {
+     background-color: black;
+ }
+
+ /* LLamada por SELECTOR MULTIPLE  */
+ #segundoh3,
+ [src="img/Logo-Adecco.png"] {
+     background-color: green;
+ }
 
 
 
-/*Estilos genericos*/
-.contenedor {
-    max-width: 87%;
-   /* 
+ /*Estilos genericos*/
+ .contenedor {
+     max-width: 87%;
+     /* 
     margin-top: 0;
     margin-right: auto;
     margin-bottom: 0;
     margin-left: auto;
     margin: 0% auto 0% auto;distintas formas de poner el margen y ahorrar codigo*/
-    margin: 0 auto;
-    
-}
+     margin: 0 auto;
 
-/*estilos para el Main*/
-.fondoMain {
-    background-image: url(../img/11641893944_banner_zona_centro.png);
-    background-size: cover;
-    background-position: top left;
-}
-.margenDerecho {
-   margin-right: 30%; 
-}
-.zona-centro {
-background-color: rgba(248, 102, 102, 0.65);
- font-family: var(--fuentePrincipal);
- margin-bottom: 10px;
- display: block;
-font-weight: 800;
-font-size: 4.5rem;
-padding: 35px;
- color: #fff;
-}
-.fondoMain a{
-    
-}
+ }
 
-/*Estilos para la seccion de imagen de corporaciones*/
+ /*estilos para el Main*/
+ .fondoMain {
+     background-image: url(../img/11641893944_banner_zona_centro.png);
+     background-size: cover;
+     background-position: top left;
+ }
 
-/*estilos seccion cursos*/
+ .margenDerecho {
+     margin-right: 30%;
+ }
 
-/*estilos seccion video*/
+ .zona-centro {
+     background-color: rgba(248, 102, 102, 0.65);
+     font-family: var(--fuentePrincipal);
+     margin-bottom: 10px;
+     display: block;
+     font-weight: 800;
+     font-size: 4.5rem;
+     padding: 35px;
+     color: #fff;
+ }
 
-/*Estilos seccion para quien son estos cursos*/
+ .fondoMain a {}
 
-/*estilos localizaciones*/
-.localizaciones {
-    background-color: black;
-    color: white
-}
+ /*Estilos para la seccion de imagen de corporaciones*/
 
-/*estilos contactar*/
+ /*estilos seccion cursos*/
+ .seccionCursos h3 {
+     text-align: center;
+     color: var(--colorPrincipal);
+     font-family: var(--fuentePrincipal);
+     font-weight: 800;
+     text-transform: uppercase;
+     font-size: 1.7rem;
+     margin: 40px 0px;
+ }
 
+ .seccionCursos>h2 {
+     margin-bottom: 72px;
+     text-align: center;
+     color: var(--colorSecundario);
+     font-family: var(--fuentePrincipal);
+     font-weight: 800;
+     text-transform: uppercase;
+     font-size: 2.7rem;
+ }
 
+ .botonesCursos {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     margin-bottom: 105px;
+ }
 
+ .botonVertodo {
+     background-color: var(--colorPrincipal);
+     color: white;
+     font-family: var(--fuentePrincipal);
+     font-size: 1.4rem;
+     padding: 10px 24px;
+     text-transform: uppercase;
+     text-decoration: none;
+     font-weight: 800;
+     margin-left: 0.5rem;
+     margin-right: 0.5rem;
+     border: 1px solid var(--colorPrincipal);
+ }
 
+ .botonMadrid {
+     background-color: white;
+     color: var(--colorSecundario);
+     font-family: var(--fuentePrincipal);
+     font-size: 1.4rem;
+     padding: 10px 24px;
+     text-transform: uppercase;
+     text-decoration: none;
+     font-weight: 800;
+     margin-left: 0.5rem;
+     margin-right: 0.5rem;
+     border: 1px solid var(--colorPrincipal);
+ }
 
+ .cursosOfertados {
+     margin-bottom: 120px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
 
+ .cursosOfertados>div {
+     display: flex;
+     justify-content: space-between;
+     max-width: 50%;
+     flex: 2;
+     padding: 40px 60px;
+     min-height: 300px;
+     flex-direction: column;
+ }
 
+ .marketing {
+     background-image: url(../img/Curso-marketing-digital-centro.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: right;
+     padding: 60px 80px;
+ }
 
+ .videojuegos {
+     background-image: url(../img/Curso-programacion-videojuegos-centro.png);
+     padding: 60px 80px;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: right;
+ }
 
+ .cursosOfertados h2 {
+     color: white;
+     font-size: 2.7rem;
+     text-transform: uppercase;
+     font-weight: 700;
+     margin-bottom: 22px;
+ }
 
+ .cursosOfertados a {
+     color: var(--colorPrincipal);
+     font-size: 1.4rem;
+     background-color: white;
+     border: 2px solid white;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-weight: 700;
+     padding: 20px 60px;
+     display: inline-block;
+ }
+
+ /*estilos PIDENOSLO*/
+ .pidenoslo {
+     margin-bottom: 120px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     text-align: center;
+ }
+
+ .pidenoslo h3 {
+     font-weight: 800;
+     text-align: center;
+     text-transform: uppercase;
+     margin-bottom: 40px 0;
+     color: var(--colorSecundario);
+ }
+
+ .pidenoslo div {
+   display: flex;
+
+ }
+ .pidenoslo a:hover{
+
+ }
+
+ /*estilos seccion video*/
+
+ /*Estilos seccion para quien son estos cursos*/
+
+ /*estilos localizaciones*/
+ .localizaciones {
+     background-color: black;
+     color: white
+ }
+
+ /*estilos contactar*/
