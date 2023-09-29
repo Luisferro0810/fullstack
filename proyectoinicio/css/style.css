@@ -9,7 +9,13 @@
 
  html {
      font-size: 62.5%;
+     /* box-sizing: border-box; */
  }
+ /*(siempre ubicar en el HTML) se utiliza para crear un box con un valor prederterminado sin que afecte el valor general si agregas paddin o margin por ejemplo
+     *, *:before, *:after{
+        box-sizing: inherit;
+     }*/
+ 
 
  /* NOta: si lo aplicas dentro de todo el body te cambia completo */
  body {
@@ -249,11 +255,8 @@ h5 {
 
  /*estilos PIDENOSLO*/
  .pidenoslo {
-     margin-bottom: 120px;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-     text-align: center;
+     margin-bottom: 150px;
+    
  }
 
  .pidenoslo h3 {
@@ -265,16 +268,38 @@ h5 {
  }
 
  .pidenoslo div {
-   display: flex;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+}
 
- }
- .pidenoslo a:hover{
+.pidenoslo a{
+    background-color: var(--colorPrincipal);
+    color: white;
+    font-family: var(--fuentePrincipal);
+    font-size: 1.4rem;
+    padding: 20px 40px;
+    border-radius: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid;
+}
+.pidenoslo a:hover{
+    background-color: var(--colorSecundario);
+}
 
- }
 
  /*estilos seccion video*/
+ .seccionVideo{
+    display: flex;
+ }
+ .video{
+    margin: auto;
+ }
 
- /*Estilos seccion para quien son estos cursos*/
+/*Estilos seccion para quien son estos cursos*/
+
 
  /*estilos localizaciones*/
  .localizaciones {

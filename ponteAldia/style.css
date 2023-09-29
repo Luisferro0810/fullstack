@@ -1,0 +1,81 @@
+/*-- Ejercicio de practica de todos los hijos*/
+.selectorCadenadescendente h2 {
+    background-color: blue;
+    height: 100px;
+}
+
+.todosLoshijos>div>div>h2 {
+    background-color: blue;
+    height: 100px;
+}
+
+/*-- Ejercicio de practica de Padding y margin*/
+.section1 {
+    color: black;
+    background-color: yellow;
+    margin: 20px;
+    height: 200px;
+
+}
+
+.section2 {
+    color: black;
+    background-color: yellow;
+    padding: 20px;
+    height: 200px;
+}
+
+/*-- Ejercicio de practica Displays Inline y Block*/
+.displayBlockEinline1>p {
+    background-color: orangered;
+}
+
+.displayBlockEinline1 a {
+    background-color: palevioletred;
+}
+
+.displayBlockEinline1 h1 {
+    background-color: orange;
+}
+
+.displayBlockEinline1 h3 {
+    background-color: yellow;
+}
+
+.displayBlockEinline1 h6 {
+    background-color: green;
+}
+
+.displayBlockEinline1 p {
+    background-color: green;
+}
+
+.displayBlockEinline2 p {
+    background-color: orangered;
+    display: inline;
+}
+
+.displayBlockEinline2 a {
+    background-color: palevioletred;
+    display: block;
+}
+
+.displayBlockEinline2 h1 {
+    background-color: orange;
+    display: inline;
+}
+
+.displayBlockEinline2 h3 {
+    background-color: yellow;
+    display: inline;
+}
+
+.displayBlockEinline2 h6 {
+    background-color: green;
+    display: inline;
+}
+
+.displayBlockEinline2 div {
+    background-color: green;
+    display: inline;
+}
