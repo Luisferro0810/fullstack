@@ -11,11 +11,12 @@
      font-size: 62.5%;
      /* box-sizing: border-box; */
  }
+
  /*(siempre ubicar en el HTML) se utiliza para crear un box con un valor prederterminado sin que afecte el valor general si agregas paddin o margin por ejemplo
      *, *:before, *:after{
         box-sizing: inherit;
      }*/
- 
+
 
  /* NOta: si lo aplicas dentro de todo el body te cambia completo */
  body {
@@ -140,9 +141,80 @@ h5 {
      color: #fff;
  }
 
- .fondoMain a {}
+ .fondoMain {
+     background-image: url(../img/11641893944_banner_zona_centro.png);
+     background-size: cover;
+     background-position: top left;
+     padding: 80px 0 180px 0;
+ }
+
+ .margenDerecho {
+     margin-right: 33%;
+ }
+
+ h1 {
+     background-color: rgba(248, 102, 102, 0.65);
+     font-family: var(--fuentePrincipal);
+     font-weight: 800;
+     font-size: 4.5rem;
+     margin-bottom: 10px;
+     padding: 35px;
+     color: white;
+ }
+
+ .fondoMain a {
+     background-color: black;
+     color: white;
+     border: 2px solid black;
+     padding: 24px 94px;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-family: var(--fuenteBotones);
+     font-weight: 700;
+     font-size: 1.4rem;
+}
+
+.fondoMain a:hover {
+    color: var(--colorPrincipal);
+    background-color: white
+   /* border: 1px solid color var(#F76666) preguntar al profe por el borde no se aplica*/
+}
+
+ .flexMain {
+     display: flex;
+     flex-direction: row;
+     /*POR DEFECTO ES ROW*/
+     justify-content: space-between;
+ }
 
  /*Estilos para la seccion de imagen de corporaciones*/
+ .seccionLogos {
+    margin: 45px 20px ;
+    }
+
+ .contenedorLogos {
+    background-color: white;
+    display: block;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: -120px;
+    border-radius: 12px;
+}
+/* llamada por selector de atributo ejemplo (alt) seria asi  */
+
+[alt="logo1"] {
+    
+}
+
+[alt="logo2"] {
+    
+}
+
+
+
 
  /*estilos seccion cursos*/
  .seccionCursos h3 {
@@ -223,7 +295,13 @@ h5 {
      background-repeat: no-repeat;
      background-position: right;
      padding: 60px 80px;
+
  }
+ 
+ .marketing a:hover {
+background-color: var(--colorPrincipal);
+color: white
+}
 
  .videojuegos {
      background-image: url(../img/Curso-programacion-videojuegos-centro.png);
@@ -232,6 +310,11 @@ h5 {
      background-repeat: no-repeat;
      background-position: right;
  }
+
+ .videojuegos a:hover {
+    background-color: var(--colorPrincipal);
+    color: white
+    }
 
  .cursosOfertados h2 {
      color: white;
@@ -256,7 +339,7 @@ h5 {
  /*estilos PIDENOSLO*/
  .pidenoslo {
      margin-bottom: 150px;
-    
+
  }
 
  .pidenoslo h3 {
@@ -271,34 +354,36 @@ h5 {
      display: flex;
      flex-direction: row;
      justify-content: center;
-}
+ }
 
-.pidenoslo a{
-    background-color: var(--colorPrincipal);
-    color: white;
-    font-family: var(--fuentePrincipal);
-    font-size: 1.4rem;
-    padding: 20px 40px;
-    border-radius: 40px;
-    font-weight: 800;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: 1px solid;
-}
-.pidenoslo a:hover{
-    background-color: var(--colorSecundario);
-}
+ .pidenoslo a {
+     background-color: var(--colorPrincipal);
+     color: white;
+     font-family: var(--fuentePrincipal);
+     font-size: 1.4rem;
+     padding: 20px 40px;
+     border-radius: 40px;
+     font-weight: 800;
+     text-transform: uppercase;
+     text-decoration: none;
+     border: 1px solid;
+ }
+
+ .pidenoslo a:hover {
+     background-color: var(--colorSecundario);
+ }
 
 
  /*estilos seccion video*/
- .seccionVideo{
-    display: flex;
- }
- .video{
-    margin: auto;
+ .seccionVideo {
+     display: flex;
  }
 
-/*Estilos seccion para quien son estos cursos*/
+ .video {
+     margin: auto;
+ }
+
+ /*Estilos seccion para quien son estos cursos*/
 
 
  /*estilos localizaciones*/
