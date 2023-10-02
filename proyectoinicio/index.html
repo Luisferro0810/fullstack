@@ -44,15 +44,15 @@
     <header>
         <a href="#"><img src="img/Tu-carrera-digital-general.png">
         </a>
-        <a href="https://exp014_20_ed_lote5.iformalia.es/Publico/Portal/htmls/AdeccoRedEs/LoginAlumno.aspx">Login
+        <a href="#">Login
             Alumnos
         </a>
-        <a href="https://exp014_20_ed_lote5.iformalia.es/Publico/Portal/htmls/AdeccoRedEs/LoginEmpresa.aspx">| Login
+        <a href="#">| Login
             Empresas
         </a>
-        <a href="https://www.tucarreradigital.es/zona-centro#cursos">Cursos
+        <a href="#">Cursos
         </a>
-        <a href="https://www.tucarreradigital.es/sobre-nosotros">Sobre Nosotros
+        <a href="#">Sobre Nosotros
         </a>
         <a href="#">Infórmate
         </a>
@@ -71,23 +71,15 @@
                 <h1>Descubre la formación que te dará la oportunidad de convertirte en un profesional digital</h1>
                 <div class="flexMain">
                     <img src="./img/ico-centro.png">
-                    <a href="https://www.tucarreradigital.es/zona-centro#cursos">Ver Cursos ></a>
+                    <a href="#">Ver Cursos ></a>
                 </div>
             </div>
         </div>
     </main>
     <!-- Estilos para la seccion de imagen de corporaciones -->
     <section class="seccionLogos">
-        <div class="contenedorLogos">
-            <div>
-                <div>
-                    <img src="/proyectoinicio/img/Logos-oficiales.png" alt="logo1">
-                </div>
-                <div>
-                    <img src="/proyectoinicio/img/Logo-Adecco.png" alt="logo2">
-                </div>
-            </div>
-        </div>
+        <img src="/proyectoinicio/img/Logos-oficiales.png" alt="logo1">
+        <img src="/proyectoinicio/img/Logo-Adecco.png" alt="logo2">
     </section>
     <!-- Seccion Cursos -->
     <section class="seccionCursos contenedor">
@@ -131,12 +123,15 @@
                 allowfullscreen></iframe>
         </div>
     </section>
-    <section class="paraQuien contenedor">
-        <div>
+    <section class="seccionParaQuien contenedor">
+
+        <div class="paraQuienIzq">
             <h3>¿PARA QUIÉN SON ESTOS CURSOS?</h3>
             <h2>Si quieres dar un giro a tu carrera profesional y formarte en profesiones digitales con futuro, este es
-                tu lugar.</h2>
-            <p> Cuando eliges un curso en Tu Carrera Digital, estás dando el paso definitivo hacia las profesiones con
+                tu
+                lugar.</h2>
+            <p>Cuando eliges un curso en <span>Tu Carrera Digital</span> , estás dando el paso definitivo hacia las
+                profesiones con
                 más
                 demanda del momento, como Marketing Digital, Desarrollo Web Full Stack y Programación de Videojuegos,
                 Diseño
@@ -145,34 +140,68 @@
                 necesidades de las empresas. Queremos que saques el máximo partido a estos cursos y que potencies tus
                 posibilidades de encontrar un empleo.</p>
             <h4>PARA PARTICIPAR, NECESITARÁS ESTAR INSCRITO EN GARANTÍA JUVENIL</h4>
-            <a href="#">IR A LA WEB DE GARANTÍA JUVENIL</a>
+
+
+            <a href="https://www.sepe.es/HomeSepe/Personas/encontrar-trabajo/Garantia-Juvenil/que-es-garantia-juvenil">Ir
+                a
+                la web Garantía Juvenil</a>
             <h5>Descárgate esta infografía en la que te mostramos cómo descargar tu certificado de Garantía Juvenil:
             </h5>
-            <a href="#">DESCARGAR INFOGRAFÍA ADJUNTA</a>
+            <a class="botonInfografia" href="https://www.tucarreradigital.es/assets/Infografia-S.G.J.pdf">Descargar
+                infografía adjunta</a>
+        </div>
+
+        <div class="paraQuienDer">
+            <div class="paraQuienDerSup">
+                <h5>¿Eres <span class="destacarAzul">mayor de 16 años <br> y menor de 30</span> ?</h5>
+                <h5>¿Estás <span>sin trabajar</span> ?</h5>
+                <h5>¿Estás <span>sin cursar formación</span> ?</h5>
+            </div>
+
+            <div class="paraQuienDerInf">
+                <img src="./img/ico-centro.png">
+                <h4>Dale forma a tu futuro <br>y despega con <br><span>Tu carrera digital</span></h4>
+            </div>
         </div>
     </section>
-    <section class="localizaciones">
-        <h2>LOCALIZACIONES:</h2>
-        <h3>MADRID</h3>
-        <p>CALLE DEL MARQUÉS DE AHUMADA 7 PLANTA BAJA AULA 15 28028, MADRID, MADRID.</p>
-        <h3> MADRID</h3>
-        <p>CALLE HOSPITAL 2 28012, MADRID, MADRID.</p>
+    <!-- /*estilos localizaciones*/ -->
+    <section class="cajas-localizaciones">
+        <h2 class="contenedor">localizaciones:</h2>
+        <div class="contenedor">
+            <div>
+                <h3>Madrid</h3>
+                <p>CALLE DEL MARQUÉS DE AHUMADA 7 PLANTA BAJA AULA 15 28028, MADRID, MADRID.</p>
+            </div>
+        </div>
     </section>
-    <section>
-        <h3> CONTACTAR</h3>
-        <h2> ¿TIENES DUDAS? HABLA CON NOSTROS:</h2>
-        <img src="img/ico-TLF.png" alt="">
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
         <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
         <path d="M15 7a2 2 0 0 1 2 2"></path>
         <path d="M15 3a6 6 0 0 1 6 6"></path>
      </svg> -->
-        <h3>LLÁMANOS:</h3>
-        <a href="tel:638024408">638024408</a>
-        <img src="img/ico-EMAIL.png" alt="">
-        <h3>ESCRÍBENOS:</h3>
-        <a href="patric.departearroyo@adecco.com">patric.departearroyo@adecco.com</a>
+    <section class="Contacto">
+        <div class="contenedor">
+            <h3>Contactar</h3>
+            <h2>¿Tienes dudas? habla con nosotros</h2>
+            <div class="ContactoCuadros">
+                <div class="cuadro1">
+                    <img src="./img/ico-TLF.png" alt="">
+                    <div class="llamada">
+                        <p>Llamanos</p>
+                        <a href="638024408">638024408</a>
+                    </div>
+                </div>
+                <div class="cuadro2">
+                    <img src="./img/ico-EMAIL.png" alt="">
+                    <div class="correo">
+                        <p>Escribenos</p>
+                        <a href="patric.departearroyo@adecco.com">patric.departearoyo@adecco.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <footer>
         <a href="#">CURSOS ZONA-CENTRO
