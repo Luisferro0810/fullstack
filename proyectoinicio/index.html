@@ -40,31 +40,23 @@
     <a href="https://exp014_20_ed_lote5.iformalia.es/Publico/Portal/htmls/AdeccoRedEs/LoginEmpresa.aspx">ENLACE2</a>
     <a href="https://exp014_20_ed_lote5.iformalia.es/Publico/Portal/htmls/AdeccoRedEs/LoginEmpresa.aspx">ENLACE3</a>
     </section> -->
-
-    <header>
-        <a href="#"><img src="img/Tu-carrera-digital-general.png">
-        </a>
-        <a href="#">Login
-            Alumnos
-        </a>
-        <a href="#">| Login
-            Empresas
-        </a>
-        <a href="#">Cursos
-        </a>
-        <a href="#">Sobre Nosotros
-        </a>
-        <a href="#">Infórmate
-        </a>
+    <!-- Estilos para la seccion Header -->
+    <header class="seccionHeader contenedor">
+        <div class="seccionImagen">
+            <a href="#"><img src="img/Tu-carrera-digital-general.png"></a>
+        </div>
+        <div class="seccionEnlaces">
+            <div class="seccionLogin">
+                <a href="#"> Login Alumnos | </a>
+                <a href="#"> Login Empresas</a>
+            </div>
+            <div class="seccionNav">
+                <a href="#">Cursos</a>
+                <a href="#">Sobre Nosotros</a>
+                <a class="botonInformate" href="#">Infórmate</a>
+            </div>
+        </div>
     </header>
-    <p>
-        <!-- <h1>
-        Hola mundo!
-        <H2> 
-            Hola mundo!
-
-        </H2>
-    </h1> -->
     <main class="fondoMain">
         <div class="contenedor">
             <div class="margenDerecho">
@@ -181,6 +173,8 @@
         <path d="M15 7a2 2 0 0 1 2 2"></path>
         <path d="M15 3a6 6 0 0 1 6 6"></path>
      </svg> -->
+
+    <!-- estilos contacto -->
     <section class="Contacto">
         <div class="contenedor">
             <h3>Contactar</h3>
@@ -203,21 +197,20 @@
             </div>
         </div>
     </section>
-    <footer>
-        <a href="#">CURSOS ZONA-CENTRO
-        </a>
-        <a href="#">SOBRE NOSOTROS
-        </a>
-        <a href="#">Preguntas Frecuentes (FAQ)
-        </a>
-        <a href="#">Política de Cookies
-        </a>
-        <a href="#">Política de Privacidad
-        </a>
-        <a href="#">Aviso Legal
-        </a>
+    <!-- estilo footer -->
+    <footer class="seccionFooter contenedor">
+        <div class="footerArriba">
+            <a href="#">CURSOS ZONA-CENTRO</a>
+            <a href="#">SOBRE NOSOTROS</a>
+        </div>
+        <div class="footerAbajo">
+            <a href="#">Preguntas Frecuentes (FAQ)</a>
+            <a href="#">Política de Cookies</a>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Aviso Legal</a>
+        </div>
     </footer>
-    <form>
+    <!-- (((DISEÑO CUESTIONARIO))) <form>
         <fieldset>
             <legend Titulo del formulario>
                 <label>Nombre y Apellidos </label>
@@ -233,9 +226,7 @@
             </legend>
 
         </fieldset> agrupa los campos del formulario
-    </form>
-
-
+    </form> -->
 </body>
 
 </html>

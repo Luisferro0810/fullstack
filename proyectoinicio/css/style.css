@@ -25,7 +25,21 @@
      font-size: 16px;
      font-family: var(--fuentePrincipal);
      font-weight: var();
+    }
+     /* MEDIAQUERIES y RWD Respnsive web disigner background-color: red;
+ 
+
+ @media (min-width:900px) {
+    body {
+        background-color: yellow;
+    }
  }
+
+ @media (max-width:700px) {
+    body {
+        background-color: blue;
+    }
+ } MEDIAQUERIES y RWD Respnsive web disigner */
 
  /* Practicas
  h1 {
@@ -116,8 +130,16 @@ h5 {
     margin-left: auto;
     margin: 0% auto 0% auto;distintas formas de poner el margen y ahorrar codigo*/
      margin: 0 auto;
+}
 
- }
+/* @media (max-width: 1140px) and (min-width: 768px) {
+    .contenedor {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+} MEDIAQUERIES y RWD Respnsive web disigner*/
+    
+
 
  /*estilos para el Main*/
  .fondoMain {
@@ -210,7 +232,7 @@ h5 {
     
 } */
 
-/*estilos seccion cursos*/
+ /*estilos seccion cursos*/
  .seccionCursos h3 {
      text-align: center;
      color: var(--colorPrincipal);
@@ -379,214 +401,333 @@ h5 {
 
  /*Estilos seccion para quien son estos cursos*/
 
- .seccionParaQuien{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 100px;
-}
+ .seccionParaQuien {
+     display: flex;
+     flex-direction: row;
+     margin-bottom: 100px;
+ }
 
-.seccionParaQuien>div{
-    flex:1;
-    max-width: 50%;
-}
+ .seccionParaQuien>div {
+     flex: 1;
+     max-width: 50%;
+ }
 
-.seccionParaQuien h3{
-    color:var(--colorPrincipal);
-    font-family: var(--fuentePrincipal);
-    font-weight: 600;
-    font-size: 1.7rem;
-}
+ .seccionParaQuien h3 {
+     color: var(--colorPrincipal);
+     font-family: var(--fuentePrincipal);
+     font-weight: 600;
+     font-size: 1.7rem;
+ }
 
-.seccionParaQuien h2{
-    font-family: var(--fuentePrincipal);
-    color: var(--colorSecundario);
-    font-size: 2.7rem;
-    font-weight: 800;
-    margin-bottom: 22px;
-}
+ .seccionParaQuien h2 {
+     font-family: var(--fuentePrincipal);
+     color: var(--colorSecundario);
+     font-size: 2.7rem;
+     font-weight: 800;
+     margin-bottom: 22px;
+ }
 
-.paraQuienIzq{
-    margin-right: 15px;
-}
+ .paraQuienIzq {
+     margin-right: 15px;
+ }
 
 
-.seccionParaQuien p{
-    font-family: var(--fuentePrincipal);
-    font-size: 1.5rem;
-    font-weight: 200;
-    margin-bottom: 25px;
-    line-height: 1.5;
-    color: var(--colorSecundario);
-}
+ .seccionParaQuien p {
+     font-family: var(--fuentePrincipal);
+     font-size: 1.5rem;
+     font-weight: 200;
+     margin-bottom: 25px;
+     line-height: 1.5;
+     color: var(--colorSecundario);
+ }
 
-.seccionParaQuien span{
-    font-weight: 800;
-}
+ .seccionParaQuien span {
+     font-weight: 800;
+ }
 
-.paraQuienIzq h4{
-    font-family: var(--fuentePrincipal);
-    color: var(--colorSecundario);
-    font-weight: 800;
-    font-size: 1.5rem;
-    line-height: 1.8;
-}
+ .paraQuienIzq h4 {
+     font-family: var(--fuentePrincipal);
+     color: var(--colorSecundario);
+     font-weight: 800;
+     font-size: 1.5rem;
+     line-height: 1.8;
+ }
 
-.paraQuienIzq a{
-    color: var(--colorPrincipal);
-    text-transform: uppercase;
-    font-family: var(--fuentePrincipal);
-    font-size: 1.4rem;
-    font-weight: 700;
-}
+ .paraQuienIzq a {
+     color: var(--colorPrincipal);
+     text-transform: uppercase;
+     font-family: var(--fuentePrincipal);
+     font-size: 1.4rem;
+     font-weight: 700;
+ }
 
-.paraQuienIzq h5{
-    font-family: var(--fuentePrincipal);
-    font-weight:800;
-    font-size: 1.4rem;
-    line-height: 1.5; 
-    color: var(--colorSecundario);
-    margin-bottom: 25px;
-}
+ .paraQuienIzq h5 {
+     font-family: var(--fuentePrincipal);
+     font-weight: 800;
+     font-size: 1.4rem;
+     line-height: 1.5;
+     color: var(--colorSecundario);
+     margin-bottom: 25px;
+ }
 
-.paraQuienIzq .botonInfografia{
-    background-color: var(--colorPrincipal);
-    color: white;
-    text-decoration: none;
-    padding: 20px 40px;
-    display: inline-block;
+ .paraQuienIzq .botonInfografia {
+     background-color: var(--colorPrincipal);
+     color: white;
+     text-decoration: none;
+     padding: 20px 40px;
+     display: inline-block;
 
-}
+ }
 
-.paraQuienDer{
-    display: flex;
-    flex-direction: column;
-    margin-left: 45px;
-    margin-top: 60px;
-}
+ .paraQuienDer {
+     display: flex;
+     flex-direction: column;
+     margin-left: 45px;
+     margin-top: 60px;
+ }
 
-.paraQuienDerSup{
-    background-color: var(--colorPrincipal);
-    padding: 60px 30px;
-}
+ .paraQuienDerSup {
+     background-color: var(--colorPrincipal);
+     padding: 60px 30px;
+ }
 
-.paraQuienDerSup h5{
-    font-family: var(--fuentePrincipal);
-    font-size: 2.5rem;
-    font-weight: 800;
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: white;
-}
+ .paraQuienDerSup h5 {
+     font-family: var(--fuentePrincipal);
+     font-size: 2.5rem;
+     font-weight: 800;
+     margin-top: 0;
+     margin-bottom: 10px;
+     color: white;
+ }
 
-.paraQuienDerSup .destacarAzul{
-    color: var(--colorSecundario);
-}
+ .paraQuienDerSup .destacarAzul {
+     color: var(--colorSecundario);
+ }
 
-.paraQuienDerSup span{
-    color: black;
-}
-.paraQuienDerInf{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: -60px;
-    margin-right: 40px;
-}
-.paraQuienDerInf img{
-    margin-top: 10px;
-    height: 40px;
-    width: 40px;
+ .paraQuienDerSup span {
+     color: black;
+ }
 
-}
-.paraQuienDerInf h4{
-    font-family: var(--fuentePrincipal);
-    background-color: black;
-    color: white;
-    text-transform: uppercase;
-    padding: 40px 30px;
-    text-align:left;
-    width: 250px;
-}
-.paraQuienDerInf h4 span{
-    color: var(--colorPrincipal);
-}
+ .paraQuienDerInf {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: -60px;
+     margin-right: 40px;
+ }
 
-/*estilos localizaciones*/
- 
-.cajas-localizaciones{
-    background-color: black;
-    padding: 100px 0;
-}
+ .paraQuienDerInf img {
+     margin-top: 10px;
+     height: 40px;
+     width: 40px;
 
-.cajas-localizaciones .contenedor{
-    display: flex;
-}
+ }
 
-.cajas-localizaciones .contenedor div{
-    width: 25%;
-    padding: 24px 10px;
-    color: white;
-    margin: 0;
-}
+ .paraQuienDerInf h4 {
+     font-family: var(--fuentePrincipal);
+     background-color: black;
+     color: white;
+     text-transform: uppercase;
+     padding: 40px 30px;
+     text-align: left;
+     width: 250px;
+ }
 
-.cajas-localizaciones h2{
-    color: white;
-    font-size: 27px;
-    font-weight: 700px;
-    font-family: var(--fuenteBotones);
-    margin-bottom: 40px;
-    text-transform: uppercase;
-}
+ .paraQuienDerInf h4 span {
+     color: var(--colorPrincipal);
+ }
+
+ /*estilos localizaciones*/
+
+ .cajas-localizaciones {
+     background-color: black;
+     padding: 100px 0;
+ }
+
+ .cajas-localizaciones .contenedor {
+     display: flex;
+ }
+
+ .cajas-localizaciones .contenedor div {
+     width: 25%;
+     padding: 24px 10px;
+     color: white;
+     margin: 0;
+ }
+
+ .cajas-localizaciones h2 {
+     color: white;
+     font-size: 27px;
+     font-weight: 700px;
+     font-family: var(--fuenteBotones);
+     margin-bottom: 40px;
+     text-transform: uppercase;
+ }
 
  /*estilos contactar*/
 
- .Contacto{
-    background-color: var(--colorPrincipal);
-    padding-top: 90px;
-    padding-bottom: 130px;
-}
-.Contacto .contenedor>h3{
-    color: white;
-    font-size: 17px;
-    margin-bottom: 22px;
-    font-weight: 300;
-    font-family: var(--fuentePrincipal);
-    text-transform: uppercase;
-}
-.Contacto .contenedor>h2{
-    color: white;
-    margin-bottom: 22px;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-.ContactoCuadros{
-    display: flex;
-    flex-direction: row;
+ .Contacto {
+     background-color: var(--colorPrincipal);
+     padding-top: 90px;
+     padding-bottom: 130px;
+ }
+
+ .Contacto .contenedor>h3 {
+     color: white;
+     font-size: 17px;
+     margin-bottom: 22px;
+     font-weight: 300;
+     font-family: var(--fuentePrincipal);
+     text-transform: uppercase;
+ }
+
+ .Contacto .contenedor>h2 {
+     color: white;
+     margin-bottom: 22px;
+     text-transform: uppercase;
+     font-weight: 800;
+ }
+
+ .ContactoCuadros {
+     display: flex;
+     flex-direction: row;
+ }
+
+ .ContactoCuadros img {
+     margin-right: 15px;
+ }
+
+ .cuadro1 {
+     display: flex;
+     background-color: white;
+     margin-right: 15px;
+     border-radius: 0.55rem;
+     flex-direction: row;
+     justify-content: flex-start;
+     flex: 1;
+     max-width: 50%;
+     padding: 20px;
+ }
+
+ .cuadro2 {
+     background-color: white;
+     margin-left: 15px;
+     border-radius: 0.55rem;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     flex: 1;
+     max-width: 50%;
+     padding: 20px;
+ }
+
+ .seccionFooter {
+ display: flex;
+ flex-direction: column;
+ margin-bottom: 40px;
+ }
+
+ .footerArriba {
+padding-top: 50px;
+padding-bottom: 40px;
+border-bottom: 0.2px solid black;
 }
 
-.ContactoCuadros img{
-    margin-right: 15px;
+.footerArriba a {
+font-family: var(--fuentePrincipal);
+color: var(--colorSecundario);
+font-size: 1.7rem;
+font-weight: 800;
+margin-right: 80px;
+line-height: 1.2;
+text-transform: uppercase;
 }
-.cuadro1{
+
+ .footerAbajo {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 0.2px solid black;
+}
+
+ .footerAbajo a {
+    font-family: var(--fuentePrincipal);
+    color: var(--colorSecundario);
+    font-size: 1.4rem;
+   margin-right: 80px;
+    line-height: 1.2;
+}
+
+/* Estilos Header  */
+
+.seccionHeader{
     display: flex;
-    background-color: white;
-    margin-right: 15px;
-    border-radius: 0.55rem;
     flex-direction: row;
-    justify-content: flex-start;
-    flex: 1;
-    max-width: 50%;
-    padding: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.cuadro2{
-    background-color: white;
-    margin-left: 15px;
-    border-radius: 0.55rem;
+
+
+.seccionEnlaces {
+
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex: 1;
-    max-width: 50%;
-    padding: 20px;
+    flex-direction: column;
 }
+.seccionLogin{
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.seccionLogin a{
+
+    color: var(--colorPrincipal);
+    font-family: var(--fuentePrincipal);
+    margin-left: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+.seccionLogin a:hover{
+    text-decoration: underline;
+}
+
+
+.seccionNav a{
+    color: var(--colorSecundario);
+    font-family: var(--fuentePrincipal);
+    margin-left: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.7rem;
+    display: inline-block;
+}
+
+.seccionNav a:hover{
+    text-decoration: underline;
+}
+
+.botonInformate{
+    background-color: var(--colorPrincipal);
+    padding: 0.6rem 1.5rem;
+    border-radius: 4rem;
+    color: white !important;
+}
+
+.botonInformate:hover{
+    background-color: var(--colorSecundario);
+    text-decoration: none !important;
+}
+
+.seccionImagen{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+

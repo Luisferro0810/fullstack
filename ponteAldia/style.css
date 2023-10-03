@@ -79,3 +79,69 @@
     background-color: green;
     display: inline;
 }
+
+/* ejercicio 1 flex practicas */
+.porcentajes {
+    display: flex;
+    /* flex-direction: row; (por defecto viene en row*/
+}
+
+.divp1 {
+    width: 20%;
+    border: 2px solid black;
+}
+
+.divp2 {
+    width: 30%;
+    border: 2px solid black;
+}
+
+.divp3 {
+    width: 50%;
+    border: 2px solid black;
+}
+
+/* ejercicio 2 */
+
+.altura {
+    display: flex;
+    flex-direction: column;
+}
+
+.altura1 {
+    width: 100px;
+    border: 3px solid yellow;
+}
+
+.altura2 {
+    width: 200px;
+    border: 3px solid yellow;
+}
+
+.seccion3 {
+    display: flex;
+    border: 5px solid black;
+}
+
+.divFila1 {
+    width: 40%;
+    border: 4px solid red;
+}
+
+.divFila2 {
+    width: 60%;
+    display: flex;
+    border: 4px solid red;
+}
+
+.divFila2 p {
+    width: 50%;
+    border: 2px solid yellow;
+}
+
+@media (max-width: 350px) {
+.mediaqueris {
+background-color: ;
+}
+
+}
