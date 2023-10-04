@@ -141,7 +141,29 @@
 
 @media (max-width: 350px) {
 .mediaqueris {
-background-color: ;
+background-color: red;
 }
 
+}
+
+.ejercicioAR {
+    height: 500px;
+    background-color: blue;
+    position: relative;
+    background: rgba(206,166,9,1);
+    background: -moz-linear-gradient(left, rgba(206,166,9,1) 0%, rgba(161,132,2,1) 38%, rgba(122,100,0,1) 51%, rgba(187,154,7,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(206,166,9,1)), color-stop(38%, rgba(161,132,2,1)), color-stop(51%, rgba(122,100,0,1)), color-stop(100%, rgba(187,154,7,1)));
+    background: -webkit-linear-gradient(left, rgba(206,166,9,1) 0%, rgba(161,132,2,1) 38%, rgba(122,100,0,1) 51%, rgba(187,154,7,1) 100%);
+    background: -o-linear-gradient(left, rgba(206,166,9,1) 0%, rgba(161,132,2,1) 38%, rgba(122,100,0,1) 51%, rgba(187,154,7,1) 100%);
+    background: -ms-linear-gradient(left, rgba(206,166,9,1) 0%, rgba(161,132,2,1) 38%, rgba(122,100,0,1) 51%, rgba(187,154,7,1) 100%);
+    background: linear-gradient(to right, rgba(206,166,9,1) 0%, rgba(161,132,2,1) 38%, rgba(122,100,0,1) 51%, rgba(187,154,7,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cea609', endColorstr='#bb9a07', GradientType=1 );
+}
+.ejercicioAR div {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 }
