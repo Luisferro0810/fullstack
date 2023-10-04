@@ -155,6 +155,12 @@ h5 {
      margin-right: 30%;
  }
 
+ @media (max-width:1140px) {
+     .margenDerecho {
+         margin-right: 0;
+     }
+ }
+
  .zona-centro {
      background-color: rgba(248, 102, 102, 0.65);
      font-family: var(--fuentePrincipal);
@@ -186,6 +192,7 @@ h5 {
      padding: 35px;
      color: white;
  }
+
  /* VER COMO AÑADIR CODIGO DESDE CSS SIN PODER SELECCIONARLO
  SON PSEUDOELEMENTOS, NO SE PUEDEN VER EN EL HTML
  .h1:after {
@@ -244,15 +251,14 @@ h5 {
 
  @media (max-width:1140px) and (min-width:768px) {
 
-     /* .seccionLogos {
-        padding: 20px 40px;
-    } */
-     [alt="logo1"] {
+     [src="./img/Logos-oficiales.png"] {
          max-width: 70%;
+         /* margin: 0px 40px; */
      }
 
-     [alt="logo2"] {
+     [src="./img/Logo-Adecco.png"] {
          max-width: 30%;
+         /* margin: 0px 40px; */
      }
  }
 
@@ -263,8 +269,8 @@ h5 {
          align-items: center;
      }
 
-     [alt="logo2"] {
-         max-width: 100%;
+     .seccionLogos img {
+         max-width: 90%;
          padding: 20px;
      }
 
@@ -345,6 +351,13 @@ h5 {
      justify-content: space-between;
  }
 
+ @media (max-width:768px) {
+     .cursosOfertados {
+         flex-direction: column;
+     }
+
+ }
+
  .cursosOfertados>div {
      display: flex;
      justify-content: space-between;
@@ -353,6 +366,24 @@ h5 {
      padding: 40px 60px;
      min-height: 300px;
      flex-direction: column;
+ }
+
+ @media (max-width:1140px) {
+     .cursosOfertados>div {
+         padding: 20px 30px;
+
+     }
+ }
+
+ @media (max-width:768px) {
+     .cursosOfertados>div {
+         margin-right: 0;
+         margin-left: 0;
+         margin-bottom: 15px;
+         margin-top: 15px;
+         max-width: 100%;
+     }
+
  }
 
  .marketing {
@@ -449,6 +480,20 @@ h5 {
      margin: auto;
  }
 
+ @media (max-width:1140px) {
+     .video iframe {
+         width: 100%;
+         height: 350px;
+     }
+ }
+
+ @media (max-width:768px) {
+     .video iframe {
+         width: 100%;
+         height: 200px;
+     }
+ }
+
  /*Estilos seccion para quien son estos cursos*/
 
  .seccionParaQuien {
@@ -461,6 +506,7 @@ h5 {
      .seccionParaQuien {
          flex-direction: column;
      }
+
  }
 
  .seccionParaQuien>div {
@@ -471,7 +517,7 @@ h5 {
  @media (max-width:1140px) {
      .seccionParaQuien>div {
          flex: 1;
-         max-width: 50%;
+         max-width: 100%;
      }
  }
 
@@ -619,6 +665,21 @@ h5 {
      margin: 0;
  }
 
+ @media (max-width:1140px) {
+    .cajas-localizaciones .contenedor div {
+        width: 50%;
+    }
+}
+
+@media (max-width:768px) {
+    .cajas-localizaciones .contenedor{
+        flex-wrap: wrap;
+    }
+    .cajas-localizaciones .contenedor div {
+        width: 100%;
+    }
+}
+
  .cajas-localizaciones h2 {
      color: white;
      font-size: 27px;
@@ -684,6 +745,11 @@ h5 {
      max-width: 50%;
      padding: 20px;
  }
+
+ @media (max-width:1140px) {
+    .ContactoCuadros{
+        flex-direction: column;
+    }
 
  .seccionFooter {
      display: flex;
