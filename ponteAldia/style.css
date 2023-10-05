@@ -202,3 +202,21 @@ background-color: red;
     grid grid-template-rows: 2fr 2fr;
     
 }
+
+/* display:grid;
+grid-template-row: 200px 200px;
+grid-template-columns: 300px 300px;
+
+grid: 200px 200px / 300px 300px; ABREVIAR LO ANTERIOR, LO MISMO
+
+PODEMOS PONER UNIDADES DE MEDIDAS EN PORCENTAJE
+
+grid: 50% 50% / 50% 50%;
+
+TAMBIEN CON FRACCIONES FR
+
+grid: 1fr 1fr / 1fr 1fr;
+
+OTRA ALTERNATIVA
+
+grid: repeat(2, 1fr) / repeat(2, 1fr); IMPORTANTE */
