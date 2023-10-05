@@ -167,3 +167,38 @@ background-color: red;
     bottom: 0px;
     right: 0px;
 }
+
+.ejercicioGrid div{
+    border: 1px solid black;
+}
+
+.ejercicioGrid {
+    display: grid;
+    /* grid-template-columns: 50% 50%; */
+    grid-template-columns: 2fr 6fr;
+    grid-template-rows: 50px 300px 100px 200px;
+}
+
+.ejercicioGrid2 div{
+    border: 2px solid blue
+    
+}
+.ejercicioGrid2{
+    height: 500px;
+    display: grid;
+    grid-template-columns: 100fr 300fr 200fr 150fr;
+    grid-template-rows: 5fr 15fr 16fr 7fr;
+    /* column-gap: 15px;
+    row-gap: 15px; 
+} maneras de dar espacio a las filas y columnas */
+.ejercicioRepeat div{
+    background-color: yellow;
+    border: 2px solid black
+}
+.ejercicioRepeat{
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid grid-template-rows: 2fr 2fr;
+    
+}

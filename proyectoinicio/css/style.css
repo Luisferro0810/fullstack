@@ -188,11 +188,10 @@ h5 {
  }
  /* VER COMO AÑADIR CODIGO DESDE CSS SIN PODER SELECCIONARLO
  SON PSEUDOELEMENTOS, NO SE PUEDEN VER EN EL HTML
- .h1:after {
+ h1:after {
      content: 'Poner Texto'
  }
-
- .h1:before {
+h1:before {
      content: 'Poner Texto'
  } before y after */
 
