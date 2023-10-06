@@ -718,6 +718,12 @@ h1:before {
      flex-direction: row;
  }
 
+ @media (max-width:1140px) {
+    .ContactoCuadros {
+        flex-direction: column;
+    }
+}
+
  .ContactoCuadros img {
      margin-right: 15px;
  }
@@ -746,48 +752,45 @@ h1:before {
      padding: 20px;
  }
 
- @media (max-width:1140px) {
-     .ContactoCuadros {
-         flex-direction: column;
-     }
+ /* estilo footer */
 
-     .seccionFooter {
-         display: flex;
-         flex-direction: column;
-         margin-bottom: 40px;
-     }
-
-     .footerArriba {
-         padding-top: 50px;
-         padding-bottom: 40px;
-         border-bottom: 0.2px solid black;
-     }
-
-     .footerArriba a {
-         font-family: var(--fuentePrincipal);
-         color: var(--colorSecundario);
-         font-size: 1.7rem;
-         font-weight: 800;
-         margin-right: 80px;
-         line-height: 1.2;
-         text-transform: uppercase;
-     }
-
-     .footerAbajo {
-         padding-top: 20px;
-         padding-bottom: 15px;
-         border-bottom: 0.2px solid black;
-     }
-
-     .footerAbajo a {
-         font-family: var(--fuentePrincipal);
-         color: var(--colorSecundario);
-         font-size: 1.4rem;
-         margin-right: 80px;
-         line-height: 1.2;
-     }
-
+ .seccionFooter {
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 40px;
  }
+
+ .footerArriba {
+     padding-top: 50px;
+     padding-bottom: 40px;
+     border-bottom: 0.2px solid black;
+ }
+
+ .footerArriba a {
+     font-family: var(--fuentePrincipal);
+     color: var(--colorSecundario);
+     font-size: 1.7rem;
+     font-weight: 800;
+     margin-right: 80px;
+     line-height: 1.2;
+     text-transform: uppercase;
+ }
+
+ .footerAbajo {
+     padding-top: 20px;
+     padding-bottom: 15px;
+     border-bottom: 0.2px solid black;
+ }
+
+ .footerAbajo a {
+     font-family: var(--fuentePrincipal);
+     color: var(--colorSecundario);
+     font-size: 1.4rem;
+     margin-right: 80px;
+     line-height: 1.2;
+ }
+
+
 
 
  /* Estilos Header  */
