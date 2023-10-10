@@ -1,5 +1,30 @@
+:root {
+    --colorPrincipal: #3383A3;
+    --fuentePrincipal: Times;
+    --colorSecundario: #AECBD2;
+    --fuenteSecundaria: arial;
+    --colorTerciario: orange;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.logoheader img {
+    height: 150px;
+    width: auto;
+}
+
+.logoheader {
+    justify-content: left;
+    align-items: left;
+}
+
 /* Reset de estilos */
-body, h1, h2, p {
+body,
+h1,
+h2,
+p {
     margin: 0;
     padding: 0;
 }
@@ -7,14 +32,22 @@ body, h1, h2, p {
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-size: 16px;
 }
 
+/* INICIO DEL HEADER */
+
 header {
-    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    background: rgba(24, 124, 201, 1);
+    background: -moz-linear-gradient(left, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(24, 124, 201, 1)), color-stop(100%, rgba(20, 97, 169, 1)));
+    background: -webkit-linear-gradient(left, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
+    background: -o-linear-gradient(left, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
+    background: linear-gradient(to right, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
 }
 
 nav ul {
@@ -27,21 +60,116 @@ nav li {
 }
 
 nav a {
+    text-align: end;
     text-decoration: none;
     color: #fff;
+    font-size: 17px;
+    font-weight: 700;
 }
 
-section {
-    padding: 40px;
+nav a:hover {
+    color: yellow;
 }
+
+
+.margenes {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* .main .fondoMain{
+display:flex;
+justify-content: center;
+height:500px;
+background-image: url(img/wallpaper.webp);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+} */
+
 
 section h2 {
     color: #333;
 }
 
 footer {
-    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
+}
+
+.logofooter img {
+    height: 230px;
+    width: auto;
+    justify-content: center;
+    align-items: end;
+}
+
+/* SECCION REGLAS DEL PADEL(LUIS) */
+
+.sectionReglasPadel {
+    padding: 50px 0;
+}
+
+
+
+/* SECCIÓN CARLO - INICIO */
+/* Estilo para el contenedor principal de la galería */
+.videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Estilo para el área de visualización de video */
+.galeria-videos {
+    position: relative;
+    width: 1120px;
+    height: 630px;
+    overflow: hidden;
+}
+
+/* Estilo para los iframes de video (ajusta el tamaño según tus necesidades) */
+.video-gallery iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Estilo para los botones de navegación */
+.navegacion {
+    margin-top: 10px;
+}
+
+.anterior,
+.siguiente {
+    padding: 10px 20px;
+    background-color: #007bff;
+    /* Cambia el color de fondo según tus preferencias */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.anterior:hover,
+.siguiente:hover {
+    background-color: #0056b3;
+    /* Cambia el color de fondo al pasar el cursor por encima */
+}
+
+/* Alineación de los botones de navegación */
+.anterior {
+    margin-right: 10px;
+}
+
+/* SECCIÓN CARLO - FINAL */
+/* Reset de estilos */
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
 }

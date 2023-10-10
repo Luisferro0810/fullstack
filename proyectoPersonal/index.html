@@ -4,64 +4,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Página de Pádel</title>
-   
+    <title>Propadel</title>
+    <link rel="preload" href="./normalize.css" as="style">
+    <link href="./normalize.css" rel="stylesheet">
     <link rel="preload" href="./css/style.css" as="style">
-    <link href="./css/style.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+
+
     <header>
-        <h1>Bienvenido a Tu Club de Pádel</h1>
+
+        <div class="logoheader">
+            <img src="./img/LOGO PROPADEL.png" alt="">
+        </div>
+        <h1>Bienvenido a ProPadel </h1>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#clases">Clases</a></li>
-                <li><a href="#reservas">Reservas</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="reglas">Reglas</a></li>
+                <li><a href="noticias"></a>Noticia</li>
+                <li><a href="clasestutoriales"></a>Clases y tutoriales/Consejos de entrenamiento y preparación física
+                </li>
+                <li><a href="pistapadel">Encuentra tu pista</a></li>
+                <li><a href="calendariotorneos"></a>Calendario Torneos</li>
+                <li><a href="contacto">Tienda</a></li>
+                <li><a href=""></a>Clasificaciones y estadisticas</li>
+                <li><a href="eventosenvivo">Eventos en vivo</a></li>
+
             </ul>
         </nav>
     </header>
 
-    <section id="inicio">
-        <h2>¡Descubre el Pádel!</h2>
-        <p>Te ofrecemos las mejores pistas y clases de pádel en la ciudad. ¡Ven y juega!</p>
+    <section class="main">
+        <div class="fondoMain">
+
+        </div>
     </section>
 
-    <section id="clases">
-        <h2>Nuestras Clases</h2>
-        <p>Ofrecemos clases para todos los niveles, desde principiantes hasta avanzados. ¡Mejora tu juego con nosotros!
+    <!-- SECCION: QUE ES EL PADEL (de Carlos) -->
+
+    <section class="secciondefinicion margenes">
+        <h2>¿Qué es el pádel?</h2>
+        <p>
+            El pádel es como jugar tenis, pero en un espacio más chiquito y con paredes, como un juego de rebotes.
+            Imagina que el tenis y el squash tuvieron un bebé, ¡ese bebé sería el pádel! Agarras una pala, una pelotita
+            y a darle contra la pared, ¡y a pasarlo en grande! ¿Qué más quieres saber? ¡Estoy aquí para ayudarte a
+            aprender y divertirnos juntos! 😄
         </p>
     </section>
 
-    <section id="reservas">
-        <h2>Reserva una Pista</h2>
-        <p>Reserva tu pista de pádel en línea y juega cuando quieras. ¡Es fácil y rápido!</p>
+    <!-- SECCION HISTORIA DEL PADEL (de Carlos) -->
+
+    <section class="seccionhistoria margenes">
+        <h2>¿Y cómo nació el pádel?</h2>
+
+        <p> El pádel, originario de México, es un deporte que mezcla el tenis y el squash. Se juega en una pista más
+            pequeña y rodeada de paredes de cristal o malla metálica. La historia comienza en la década de 1960, cuando
+            Enrique Corcuera creó el pádel en su casa, utilizando una pared y unas raquetas de tenis, ¡como una solución
+            a la falta de espacio! Pronto, el juego se popularizó en España, donde se adaptaron las reglas y las
+            canchas, y se convirtió en un fenómeno deportivo, extendiéndose por todo el mundo. Hoy en día, el pádel es
+            un deporte vibrante y accesible que disfrutan personas de todas las edades. ¡A jugar se ha dicho! </p>
+
+        <p>¡Por supuesto! Continuando con la historia del pádel, a medida que se expandía, se establecieron reglas y
+            normativas específicas para el juego en España en la década de 1970. El deporte ganó popularidad rápidamente
+            y se construyeron canchas en todo el país. En los años 90, el pádel dio un salto importante al convertirse
+            en un deporte profesional con torneos internacionales. Su crecimiento global ha sido impresionante, con
+            países de todo el mundo adoptando este emocionante deporte de raqueta. Hoy en día, el pádel es una actividad
+            muy querida y una excelente opción para mantenerte activo y socializar. ¡Así que, a disfrutar del pádel!
+
+        </p>
     </section>
 
-    <section id="galeria">
-        <h2>Galería de Fotos</h2>
-        <div class="imagen">
-            <img src="imagen1.jpg" alt="Imagen de una pista de pádel">
+
+    <!-- Reglas del padel (Seccion Luis) -->
+    <section class="sectionReglasPadel margenes">
+        <div>
+            <h2>Reglas del pádel: Resumen rápido y reglamento oficial</h2>
+            <img src="./img/background_img_Reglas 1024x1024.jpg" alt="">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ball-tennis" width="50"
+                height="50" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                <path d="M6 5.3a9 9 0 0 1 0 13.4"></path>
+                <path d="M18 5.3a9 9 0 0 0 0 13.4"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ball-tennis" width="50"
+                height="50" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                <path d="M6 5.3a9 9 0 0 1 0 13.4"></path>
+                <path d="M18 5.3a9 9 0 0 0 0 13.4"></path>
+            </svg>
         </div>
-        <div class="imagen">
-            <img src="imagen2.jpg" alt="Imagen de un partido de pádel">
+
+        <div>
+            <p>El pádel se ha convertido en una de las Actividades Deportivas más practicadas en nuestro país.
+
+                Es un deporte asequible desde muchos puntos de vista, pero aún así para saber cómo jugar al pádel debes
+                saber las reglas del pádel más básicas.
+
+                Aunque las palas de máximo nivel exigen un desembolso importante, las marcas ofrecen productos a precios
+                muy
+                competitivos para la iniciación en nuestra actividad.
+
+                El gasto económico en instalaciones tampoco es algo que asuste.
+
+                Los aspectos técnico, táctico y condicional también le confieren una gran aceptación ya que el pádel
+                posee
+                un elevado grado de adaptación al nivel del practicante. Por ello es fácil de entender como es muy
+                habitual
+                ver a numerosos nuevos jugadores/as probando y viéndose atrapados por este maravilloso deporte.
+
+                Este post tiene como objetivo ayudar a aquellos que se acercan por primera vez a una instalación de
+                pádel
+                para practicar nuestro deporte pero desconocen por completo el funcionamiento del mismo y por tanto las
+                reglas del pádel.
+            </p>
+
         </div>
+        <h2>¿Qué reglas del pádel debo saber en mi primera experiencia?</h2>
+
+        <h3>Número de jugadores:</h3>
+
+        <p>Aunque es común ver pistas individuales en numerosas instalaciones, el pádel es un deporte de equipo
+            donde
+            jugamos con un compañero para enfrentarnos a otra pareja.
+
+            Las pistas individuales son mas utilizadas para cubrir espacios muertos en clubes, servir como pista de
+            escuela para niños o iniciación en adultos, cubrir los gustos de personas que desean pasar el rato con
+            un
+            amigo.
+        </p>
+        <h3>Dinámica del Juego:</h3>
+        <p>El pádel importa el sistema de tanteo del tenis. Los partidos se juegan al mejor de 3 sets. Los juegos siguen
+            el tanteo de 15, 30, 40, Ventajas y/o Iguales
+
+            Cada 3 juegos finalizados cambiamos de pista.
+
+            La bola puede ser golpeada indistintamente por cualquier jugador en cualquier zona de la pista. A veces
+            solemos ver jugadores noveles intentando convencer a su compañero de no jugar en su “mitad”.
+
+            En el pádel para que la bola se considere buena debe tocar el suelo antes de impactar con las Paredes y/o
+            verja tras botar en el suelo excepto en el Servicio. Durante el transcurso de un punto la bola puede golpear
+            en paredes y verja. El jugador puede golpear la bola con o sin bote previo pero cumpliendo el máximo de un
+            bote para golpearla.
+
+            ¿Cuándo es bueno el saque de pádel y como se efectúa? Esta es una de las reglas del pádel más importantes,
+            el saque se considera bueno si la bola bota dentro del cuadro correspondiente tras ser golpeada por el
+            jugador al servicio. Al igual que en el tenis el saque debe ser cruzado, es decir, el jugador que sirve
+            desde la mitad derecha de su pista debe dirigir el mismo hacia el cuadrado a su izquierda de la pista rival.
+            A diferencia del tenis, en el pádel no se lanza la bola por encima de la cabeza para realizar el servicio.
+            En el pádel el jugador que realiza el saque deja caer la bola a un lado del cuerpo y la golpeará sin que la
+            pala supere la altura de la cintura el momento del impacto. El saque genera dudas cuando la bola golpea en
+            la verja lateral. El saque puede dirigirse a cualquier zona del cuadro rival pero nunca puede golpear verja
+            lateral tras el bote. En cada punto que jugamos al servicio tenemos dos oportunidades para poner la bola en
+            juego.
+
+            Y cuando la saco y la bola toca la red y pasa al otro lado de la pista?. Si la bola tras el servicio toca la
+            red y pasa al otro lado de la pista se pueden dar varias situaciones:
+
+            Si tras tocar la red la bola no bota en el cuadro correspondiente será mal siempre.
+
+            Si tras tocar la red la bola bota en el cuadro correspondiente:
+
+            La bola bota una vez y no toca verja lateral: Se considera nula y el jugador tiene derecho a repetir ese
+            servicio.
+
+            La bola bota dos veces toca verja lateral: Se considera nula y el jugador tiene derecho a repetir ese
+            servicio.
+
+            La bola bota una vez toca verja lateral: Se considera mala y el jugador no tiene derecho a repetir ese
+            servicio.
+
+            Si la bola me roza/golpea tras el envío del rival o un rebote en paredes/verjas el punto lo gana el rival.
+
+            En ocasiones y de manera accidental la bola da dos toques en mi pala antes de enviarla al otro lado de la
+            pista. En ese caso el punto lo he perdido.
+
+            Nunca puedo golpear la bola si la pala no está sujeta por mi mano y tampoco está permitido jugar competición
+            sin que la pala este sujeta por el cordón que tiene al final de la empuñadura. Es muy importante
+            acostumbrarse a jugar desde el primer día con el cordón de la pala alrededor de la muñeca. Es una medida de
+            seguridad muy importante.
+
+            Si el rival golpea la bola con fuerza y:
+
+            La bola bota en la pista y sale fuera de esta. El punto se considera ganado por el jugador que la golpeo
+            aunque tenemos la posibilidad de salir y golpearla hacia adentro de la pista y al campo rival antes de el
+            segundo bote
+
+            Bota, toca la pared/paredes y/o verja y vuelve hacia el campo rival. El punto se considera ganado por el
+            jugador que la golpeo aunque tenemos la opción de golpearla incluso cuando haya superado la línea de la red
+            hacia su pista.
+
+            Si tocamos la red con mi pala, ropa o cualquier parte del cuerpo tras golpear la bola, el punto lo gana mi
+            rival.
+
+            Cómo se si una bola que bota justo en la unión entre el suelo y las paredes/verjas?. Las reglas del pádel
+            dicen que una bola que en esta situación bota con un ángulo de 45 grados se considera buena, pero nuestro
+            consejo es que en estas situaciones no debemos discutir con nuestro rival. Todo se arregla repitiendo el
+            punto.
+        </p>
+        <h3>Espero que con estos pequeños apuntes disfrutes y entiendas este maravilloso deporte.</h3>
+
     </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>¿Tienes alguna pregunta o comentario? Contáctanos en <a
-                href="mailto:info@tupadelclub.com">info@tupadelclub.com</a></p>
+    <!-- NOTICIAS (Seccion Luis)-->
+    <section>
+        <h2>Noticias<h2>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Tu Club de Pádel</p>
-    </footer>
+    <!-- Directorio clubes y pistas (sección Dani) -->
+    <section class="Encuentra tu pista margenes">
+        <h2>Encuentra tu pista</h2>
+        <div class="localizaciones">
+            <Div class="zona norte">
+                <h3>Zona norte</h3>
+            </div>
+            <Div class="zona centro">
+                <h3>Zona centro</h3>
+            </div>
+            <Div class="zona sur">
+                <h3>Zona sur</h3>
+            </div>
+        </div>
+
+        <!-- CALENADRIO SAMUU -->
+        <section>
+            <h2>Calendario Premier Padel<h2>
+                    <section>
+
+                    </section>
+                    <section class="galeria margenes">
+                        <h2>Galería de Fotos</h2>
+                        <div class="imagen">
+                            <img src="imagen1.jpg" alt="Imagen de una pista de pádel">
+                        </div>
+                        <div class="imagen">
+                            <img src="imagen2.jpg" alt="Imagen de un partido de pádel">
+                        </div>
+                    </section>
+
+                    <!-- sección galería de vídeos (Sección Carlo - Inicio) -->
+
+                    <section class="videos">
+                        <div class="galeria-videos">
+                            <h2>Clase</h2>
+                            <iframe width="1120" height="630"
+                                src="https://www.youtube.com/embed/3FVyVUxbyf0?si=ndr6ZdJ-mzoVTiN9"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                            <iframe width="1120" height="630"
+                                src="https://www.youtube.com/embed/LtcDuIBtOJw?si=aHsi00ogEqS66VJh"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                            <iframe width="1120" height="630"
+                                src="https://www.youtube.com/embed/Zay0LBlfX_o?si=AZ74jbbhlhtLs7Yb"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="navegacion">
+                            <button class="anterior">Anterior</button>
+                            <button class="siguiente">Siguiente</button>
+                        </div>
+                    </section>
+                    <!-- Sección Carlo - Final -->
+
+                    <section class="contacto margenes">
+                        <h2>Contacto</h2>
+                        <p>¿Tienes alguna pregunta o comentario? Contáctanos en <a
+                                href="mailto:info@propadel.com">info@propadel.com</a>
+                        </p>
+                        <!-- <p>Redes sociales insta twitter youtube</p> -->
+                    </section>
+
+                    <footer>
+                        <div class="logofooter">
+                            <img src="./img/LOGO PROPADEL.png" alt="">
+                        </div>
+
+                        <p>&copy; 2023 ProPadel</p>
+                    </footer>
+                    <script src="js/scripts.js"></script>
 </body>
-
-<!-- Descargar extencion live share -->
 
 </html>
