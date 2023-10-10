@@ -722,6 +722,16 @@ h1:before {
     .ContactoCuadros {
         flex-direction: column;
     }
+
+    .cuadro1, .cuadro2 {
+        max-width: 100%;
+        margin: 10px 0px;
+    }
+
+    .ContactoCuadros img {
+        height: 60px;
+    }
+
 }
 
  .ContactoCuadros img {
@@ -803,6 +813,18 @@ h1:before {
      margin-bottom: 20px;
  }
 
+ @media (max-width:768px) {
+    .seccionHeader {
+        flex-direction: column;
+    }
+
+    .seccionImagen,
+    .seccionEnlaces {
+        max-width: 100%;
+        align-items: center;
+    }
+}
+
  .seccionImagen {
      display: flex;
      max-width: 45%;
@@ -816,19 +838,7 @@ h1:before {
      flex-direction: column;
  }
 
- @media (max-width:768px) {
-     .seccionHeader {
-         flex-direction: column;
-     }
-
-     .seccionImagen,
-     .seccionEnlaces {
-         max-width: 100%;
-         align-items: center;
-     }
- }
-
- .seccionLogin {
+.seccionLogin {
 
      display: flex;
      justify-content: flex-end;
@@ -882,3 +892,5 @@ h1:before {
  .seccionImagen img {
      max-width: 100%;
  }
+
+ 
