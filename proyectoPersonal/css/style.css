@@ -10,15 +10,23 @@ html {
     font-size: 62.5%;
 }
 
-.logoheader img {
-    height: 150px;
-    width: auto;
+.margenes {
+    width: 50%;
+    margin: 0 auto;
 }
 
 .logoheader {
-    justify-content: left;
-    align-items: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
 }
+
+.logoheader img {
+    height: 100px;
+    width: auto;
+}
+
+
 
 /* Reset de estilos */
 body,
@@ -26,6 +34,7 @@ h1,
 h2,
 p {
     margin: 0;
+    margin-top: 20px;
     padding: 0;
 }
 
@@ -36,7 +45,6 @@ body {
 }
 
 /* INICIO DEL HEADER */
-
 header {
     color: #fff;
     text-align: center;
@@ -72,10 +80,7 @@ nav a:hover {
 }
 
 
-.margenes {
-    width: 60%;
-    margin: 0 auto;
-}
+
 
 /* .main .fondoMain{
 display:flex;
@@ -93,27 +98,100 @@ section h2 {
 }
 
 footer {
-    color: #fff;
     text-align: center;
     padding: 10px 0;
 }
 
-.logofooter img {
-    height: 230px;
-    width: auto;
+.logofooter {
+    display: flex;
     justify-content: center;
-    align-items: end;
 }
 
-/* SECCION REGLAS DEL PADEL(LUIS) */
-
-.sectionReglasPadel {
-    padding: 50px 0;
+.logofooter img {
+    height: 120px;
+    width: auto;
 }
 
+/* SECCION REGLAS DEL PADEL(LUIS) INICIO*/
+
+.reglasPadelSuperior {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.reglasIcono1 {
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: girar 2s infinite linear;
+}
+
+@keyframes rebotar {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.reglasIcono2 {
+    margin: 0 10px;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    animation: rebotar 01s infinite linear;
+}
+
+.reglasPadelSuperior h2 {
+    font-size: 2.5rem;
+    /* Tamaño del texto */
+    color: #333;
+    /* Color del texto */
+    text-align: center;
+    /* Alineación del texto */
+    text-transform: uppercase;
+    /* Convertir el texto a mayúsculas */
+    margin-bottom: 20px;
+    /* Espacio entre el título y el contenido siguiente */
+    font-family: var(--fuentePrincipal);
+    background-color: #f0f0f0; /* Color de fondo del contenedor */
+    padding: 50px; /* Espaciado para separar el contenido del borde del contenedor */
+    text-align: center; /* Centrar el texto */
+}
+
+/* SECCION REGLAS DEL PADEL(LUIS) FINAL*/
+
+/* SECCION NOTICIA(LUIS) INICIO*/
+/* SECCION NOTICIAS(LUIS) FINAL*/
+
+/* SECCION SAMU INICIO */
+.calendario {
+    display: contents;
+}
+
+/* SECCION SAMU FINAL */
 
 
 /* SECCIÓN CARLO - INICIO */
+
+/* Sección galería vídeos */
 /* Estilo para el contenedor principal de la galería */
 .videos {
     display: flex;
@@ -145,7 +223,7 @@ footer {
 
 .anterior,
 .siguiente {
-    padding: 10px 20px;
+    padding: 5px 10px;
     background-color: #007bff;
     /* Cambia el color de fondo según tus preferencias */
     color: #fff;
@@ -164,12 +242,39 @@ footer {
     margin-right: 10px;
 }
 
-/* SECCIÓN CARLO - FINAL */
-/* Reset de estilos */
-body,
-h1,
-h2,
-p {
-    margin: 0;
-    padding: 0;
+/* Sección entrenamiento y preparación */
+.consejos li,
+.preparacion li {
+    list-style-type: upper-roman;
+    /*para aplicar numeros a una lista*/
+    font-size: 1.5rem;
 }
+
+footer {
+    text-align: center;
+    background-color: var(--colorSecundario);
+    color: #fff;
+    padding: 20px;
+}
+
+.redes a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #fff;
+}
+
+.redes img {
+    width: 30px;
+    height: 30px;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+.copyright img {
+    width: 100px;
+    /* height: 100px; */
+}
+
+/* SECCIÓN CARLO - FINAL */
