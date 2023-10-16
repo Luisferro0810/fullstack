@@ -5,33 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Propadel</title>
-    <link rel="preload" href="./normalize.css" as="style">
+    <link rel="preload" href="css/normalize.css" as="style">
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+    <header class="seccionHeader">
 
 
-    <header>
         <div class="logoheader">
             <img src="./img/LOGO PROPADEL.png" alt="">
         </div>
-        <h1>Bienvenido a ProPadel </h1>
+        <!-- <h1>Bienvenido a ProPadel </h1> -->
+
         <nav>
-            <li>
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#historia">Historia</a></li>
-            <li><a href="reglas">Reglas</a></li>
-            <li><a href="noticias"></a>Noticia</li>
-            <li><a href="clasestutoriales"></a>Clases y tutoriales/Consejos de entrenamiento y preparación física
+            <li><a href="#reglas">Reglas</a></li>
+            <!-- <li><a href="#noticias">Noticias</a></li>
+            <li><a href="#clasestutoriales">Clases y tutoriales</a> -->
+            <!-- /Consejos de entrenamiento y preparación física -->
             </li>
-            <li><a href="pistapadel">Encuentra tu pista</a></li>
-            <li<a href="calendariotorneos"></a>Calendario Torneos</li>
-                <li><a href="contacto">Tienda</a></li>
-                <li><a href=""></a>Clasificaciones y estadisticas</li>
-                <li><a href="eventosenvivo">Eventos en vivo</a></li>
+            <li><a href="#pistapadel">Encuentra tu pista</a></li>
+            <li></li><a href="#calendariotorneos">Calendario Torneos</a></li>
+            <li><a href="#contacto">Tienda</a></li>
+            <li><a href="#clasificaciones">Clasificaciones y estadisticas</a></li>
+            <li><a href="#eventosenvivo">Eventos en vivo</a></li>
         </nav>
     </header>
 
@@ -44,6 +45,7 @@
     <!-- SECCION: QUE ES EL PADEL (de Carlos) -->
     <section class="secciondefinicion margenes">
         <h2>¿Qué es el pádel?</h2>
+        <a id="inicio"></a>
         <p>
             El pádel es como jugar tenis, pero en un espacio más chiquito y con paredes, como un juego de rebotes.
             Imagina que el tenis y el squash tuvieron un bebé, ¡ese bebé sería el pádel! Agarras una pala, una pelotita
@@ -54,6 +56,28 @@
 
     <!-- SECCION HISTORIA DEL PADEL (de Carlos) -->
     <section class="seccionhistoria margenes">
+        <h2 id="inicio">¿Y cómo nació el pádel?</h2>
+
+        <p> El pádel, originario de México, es un deporte que mezcla el tenis y el squash. Se juega en una pista más
+            pequeña y rodeada de paredes de cristal o malla metáulca. La historia comienza en la década de 1960, cuando
+            Enrique Corcuera creó el pádel en su casa, utiulzando una pared y unas raquetas de tenis, ¡como una solución
+            a la falta de espacio! Pronto, el juego se popularizó en España, donde se adaptaron las reglas y las
+            canchas, y se convirtió en un fenómeno deportivo, extendiéndose por todo el mundo. Hoy en día, el pádel es
+            un deporte vibrante y accesible que disfrutan personas de todas las edades. </p>
+
+        <p> A medida que se expandía, se establecieron reglas y
+            normativas específicas para el juego en España en la década de 1970. El deporte ganó popularidad rápidamente
+            y se construyeron canchas en todo el país. En los años 90, el pádel dio un salto importante al convertirse
+            en un deporte profesional con torneos internacionales. Su crecimiento global ha sido impresionante, con
+            países de todo el mundo adoptando este emocionante deporte de raqueta. Hoy en día, el pádel es una actividad
+            muy querida y una excelente opción para mantenerte activo y sociaulzar. ¡Así que, a disfrutar del pádel!
+
+        </p>
+    </section>
+
+
+    <!-- SECCION HISTORIA DEL PADEL (de Carlos) -->
+    <section class="seccionhistoria margenes">
         <h2>¿Y cómo nació el pádel?</h2>
 
         <p> El pádel, originario de México, es un deporte que mezcla el tenis y el squash. Se juega en una pista más
@@ -61,7 +85,7 @@
             Enrique Corcuera creó el pádel en su casa, utiulzando una pared y unas raquetas de tenis, ¡como una solución
             a la falta de espacio! Pronto, el juego se popularizó en España, donde se adaptaron las reglas y las
             canchas, y se convirtió en un fenómeno deportivo, extendiéndose por todo el mundo. Hoy en día, el pádel es
-            un deporte vibrante y accesible que disfrutan personas de todas las edades. ¡A jugar se ha dicho! </p>
+            un deporte vibrante y accesible que disfrutan personas de todas las edades. </p>
 
         <p>¡Por supuesto! Continuando con la historia del pádel, a medida que se expandía, se establecieron reglas y
             normativas específicas para el juego en España en la década de 1970. El deporte ganó popularidad rápidamente
@@ -85,7 +109,7 @@
             <div class="reglasIcono2">
                 <img src="img/icons/raqueta_padel_byn.svg" alt="">
             </div>
-           
+
         </div>
 
         <div class="reglasPadelInferior">
@@ -111,91 +135,249 @@
                 para practicar nuestro deporte pero desconocen por completo el funcionamiento del mismo y por tanto las
                 reglas del pádel.
             </p>
+            <h2>¿Qué reglas del pádel debo saber en mi primera experiencia?</h2>
+            <div class="reglasPadelInferiorIzq">
+                <h3>Número de jugadores:</h3>
 
+                <p>Aunque es común ver pistas individuales en numerosas instalaciones, el pádel es un deporte de equipo
+                    donde
+                    jugamos con un compañero para enfrentarnos a otra pareja.
+
+                    Las pistas individuales son mas utiulzadas para cubrir espacios muertos en clubes, servir como pista
+                    de
+                    escuela para niños o iniciación en adultos, cubrir los gustos de personas que desean pasar el rato
+                    con
+                    un
+                    amigo.
+                </p>
+            </div>
+            <div class="reglasPadelInferiorDer">
+                <h3>Dinámica del Juego:</h3>
+                <p>El pádel importa el sistema de tanteo del tenis. Los partidos se juegan al mejor de 3 sets. Los
+                    juegos
+                    siguen
+                    el tanteo de 15, 30, 40, Ventajas y/o Iguales
+
+                    Cada 3 juegos finaulzados cambiamos de pista.
+
+                    La bola puede ser golpeada indistintamente por cualquier jugador en cualquier zona de la pista. A
+                    veces
+                    solemos ver jugadores noveles intentando convencer a su compañero de no jugar en su “mitad”.
+
+                    En el pádel para que la bola se considere buena debe tocar el suelo antes de impactar con las
+                    Paredes
+                    y/o
+                    verja tras botar en el suelo excepto en el Servicio. Durante el transcurso de un punto la bola puede
+                    golpear
+                    en paredes y verja. El jugador puede golpear la bola con o sin bote previo pero cumpulendo el máximo
+                    de
+                    un
+                    bote para golpearla.
+
+                    ¿Cuándo es bueno el saque de pádel y como se efectúa? Esta es una de las reglas del pádel más
+                    importantes,
+                    el saque se considera bueno si la bola bota dentro del cuadro correspondiente tras ser golpeada por
+                    el
+                    jugador al servicio. Al igual que en el tenis el saque debe ser cruzado, es decir, el jugador que
+                    sirve
+                    desde la mitad derecha de su pista debe dirigir el mismo hacia el cuadrado a su izquierda de la
+                    pista
+                    rival.
+                    A diferencia del tenis, en el pádel no se lanza la bola por encima de la cabeza para reaulzar el
+                    servicio.
+                    En el pádel el jugador que reaulza el saque deja caer la bola a un lado del cuerpo y la golpeará sin
+                    que
+                    la
+                    pala supere la altura de la cintura el momento del impacto. El saque genera dudas cuando la bola
+                    golpea
+                    en
+                    la verja lateral. El saque puede dirigirse a cualquier zona del cuadro rival pero nunca puede
+                    golpear
+                    verja
+                    lateral tras el bote. En cada punto que jugamos al servicio tenemos dos oportunidades para poner la
+                    bola
+                    en
+                    juego.
+
+                    Y cuando la saco y la bola toca la red y pasa al otro lado de la pista?. Si la bola tras el servicio
+                    toca la
+                    red y pasa al otro lado de la pista se pueden dar varias situaciones:
+
+                    Si tras tocar la red la bola no bota en el cuadro correspondiente será mal siempre.
+
+                    Si tras tocar la red la bola bota en el cuadro correspondiente:
+
+                    La bola bota una vez y no toca verja lateral: Se considera nula y el jugador tiene derecho a repetir
+                    ese
+                    servicio.
+
+                    La bola bota dos veces toca verja lateral: Se considera nula y el jugador tiene derecho a repetir
+                    ese
+                    servicio.
+
+                    La bola bota una vez toca verja lateral: Se considera mala y el jugador no tiene derecho a repetir
+                    ese
+                    servicio.
+
+                    Si la bola me roza/golpea tras el envío del rival o un rebote en paredes/verjas el punto lo gana el
+                    rival.
+
+                    En ocasiones y de manera accidental la bola da dos toques en mi pala antes de enviarla al otro lado
+                    de
+                    la
+                    pista. En ese caso el punto lo he perdido.
+
+                    Nunca puedo golpear la bola si la pala no está sujeta por mi mano y tampoco está permitido jugar
+                    competición
+                    sin que la pala este sujeta por el cordón que tiene al final de la empuñadura. Es muy importante
+                    acostumbrarse a jugar desde el primer día con el cordón de la pala alrededor de la muñeca. Es una
+                    medida
+                    de
+                    seguridad muy importante.
+
+                    Si el rival golpea la bola con fuerza y:
+
+                    La bola bota en la pista y sale fuera de esta. El punto se considera ganado por el jugador que la
+                    golpeo
+                    aunque tenemos la posibiuldad de saulr y golpearla hacia adentro de la pista y al campo rival antes
+                    de
+                    el
+                    segundo bote
+
+                    Bota, toca la pared/paredes y/o verja y vuelve hacia el campo rival. El punto se considera ganado
+                    por el
+                    jugador que la golpeo aunque tenemos la opción de golpearla incluso cuando haya superado la línea de
+                    la
+                    red
+                    hacia su pista.
+
+                    Si tocamos la red con mi pala, ropa o cualquier parte del cuerpo tras golpear la bola, el punto lo
+                    gana
+                    mi
+                    rival.
+
+                    Cómo se si una bola que bota justo en la unión entre el suelo y las paredes/verjas?. Las reglas del
+                    pádel
+                    dicen que una bola que en esta situación bota con un ángulo de 45 grados se considera buena, pero
+                    nuestro
+                    consejo es que en estas situaciones no debemos discutir con nuestro rival. Todo se arregla
+                    repitiendo el
+                    punto.
+                    importa el sistema de tanteo del tenis. Los partidos se juegan al mejor de 3 sets. Los
+                    juegos
+                    siguen
+                    el tanteo de 15, 30, 40, Ventajas y/o Iguales
+
+                    Cada 3 juegos finaulzados cambiamos de pista.
+
+                    La bola puede ser golpeada indistintamente por cualquier jugador en cualquier zona de la pista. A
+                    veces
+                    solemos ver jugadores noveles intentando convencer a su compañero de no jugar en su “mitad”.
+
+                    En el pádel para que la bola se considere buena debe tocar el suelo antes de impactar con las
+                    Paredes
+                    y/o
+                    verja tras botar en el suelo excepto en el Servicio. Durante el transcurso de un punto la bola puede
+                    golpear
+                    en paredes y verja. El jugador puede golpear la bola con o sin bote previo pero cumpulendo el máximo
+                    de
+                    un
+                    bote para golpearla.
+
+                    ¿Cuándo es bueno el saque de pádel y como se efectúa? Esta es una de las reglas del pádel más
+                    importantes,
+                    el saque se considera bueno si la bola bota dentro del cuadro correspondiente tras ser golpeada por
+                    el
+                    jugador al servicio. Al igual que en el tenis el saque debe ser cruzado, es decir, el jugador que
+                    sirve
+                    desde la mitad derecha de su pista debe dirigir el mismo hacia el cuadrado a su izquierda de la
+                    pista
+                    rival.
+                    A diferencia del tenis, en el pádel no se lanza la bola por encima de la cabeza para reaulzar el
+                    servicio.
+                    En el pádel el jugador que reaulza el saque deja caer la bola a un lado del cuerpo y la golpeará sin
+                    que
+                    la
+                    pala supere la altura de la cintura el momento del impacto. El saque genera dudas cuando la bola
+                    golpea
+                    en
+                    la verja lateral. El saque puede dirigirse a cualquier zona del cuadro rival pero nunca puede
+                    golpear
+                    verja
+                    lateral tras el bote. En cada punto que jugamos al servicio tenemos dos oportunidades para poner la
+                    bola
+                    en
+                    juego.
+
+                    Y cuando la saco y la bola toca la red y pasa al otro lado de la pista?. Si la bola tras el servicio
+                    toca la
+                    red y pasa al otro lado de la pista se pueden dar varias situaciones:
+
+                    Si tras tocar la red la bola no bota en el cuadro correspondiente será mal siempre.
+
+                    Si tras tocar la red la bola bota en el cuadro correspondiente:
+
+                    La bola bota una vez y no toca verja lateral: Se considera nula y el jugador tiene derecho a repetir
+                    ese
+                    servicio.
+
+                    La bola bota dos veces toca verja lateral: Se considera nula y el jugador tiene derecho a repetir
+                    ese
+                    servicio.
+
+                    La bola bota una vez toca verja lateral: Se considera mala y el jugador no tiene derecho a repetir
+                    ese
+                    servicio.
+
+                    Si la bola me roza/golpea tras el envío del rival o un rebote en paredes/verjas el punto lo gana el
+                    rival.
+
+                    En ocasiones y de manera accidental la bola da dos toques en mi pala antes de enviarla al otro lado
+                    de
+                    la
+                    pista. En ese caso el punto lo he perdido.
+
+                    Nunca puedo golpear la bola si la pala no está sujeta por mi mano y tampoco está permitido jugar
+                    competición
+                    sin que la pala este sujeta por el cordón que tiene al final de la empuñadura. Es muy importante
+                    acostumbrarse a jugar desde el primer día con el cordón de la pala alrededor de la muñeca. Es una
+                    medida
+                    de
+                    seguridad muy importante.
+
+                    Si el rival golpea la bola con fuerza y:
+
+                    La bola bota en la pista y sale fuera de esta. El punto se considera ganado por el jugador que la
+                    golpeo
+                    aunque tenemos la posibiuldad de saulr y golpearla hacia adentro de la pista y al campo rival antes
+                    de
+                    el
+                    segundo bote
+
+                    Bota, toca la pared/paredes y/o verja y vuelve hacia el campo rival. El punto se considera ganado
+                    por el
+                    jugador que la golpeo aunque tenemos la opción de golpearla incluso cuando haya superado la línea de
+                    la
+                    red
+                    hacia su pista.
+
+                    Si tocamos la red con mi pala, ropa o cualquier parte del cuerpo tras golpear la bola, el punto lo
+                    gana
+                    mi
+                    rival.
+
+                    Cómo se si una bola que bota justo en la unión entre el suelo y las paredes/verjas?. Las reglas del
+                    pádel
+                    dicen que una bola que en esta situación bota con un ángulo de 45 grados se considera buena, pero
+                    nuestro
+                    consejo es que en estas situaciones no debemos discutir con nuestro rival. Todo se arregla
+                    repitiendo el
+                    punto.
+                </p>
+            </div>
+
+            <h3>Espero que con estos pequeños apuntes disfrutes y entiendas este maravilloso deporte.</h3>
         </div>
-        <h2>¿Qué reglas del pádel debo saber en mi primera experiencia?</h2>
-
-        <h3>Número de jugadores:</h3>
-
-        <p>Aunque es común ver pistas individuales en numerosas instalaciones, el pádel es un deporte de equipo
-            donde
-            jugamos con un compañero para enfrentarnos a otra pareja.
-
-            Las pistas individuales son mas utiulzadas para cubrir espacios muertos en clubes, servir como pista de
-            escuela para niños o iniciación en adultos, cubrir los gustos de personas que desean pasar el rato con
-            un
-            amigo.
-        </p>
-        <h3>Dinámica del Juego:</h3>
-        <p>El pádel importa el sistema de tanteo del tenis. Los partidos se juegan al mejor de 3 sets. Los juegos siguen
-            el tanteo de 15, 30, 40, Ventajas y/o Iguales
-
-            Cada 3 juegos finaulzados cambiamos de pista.
-
-            La bola puede ser golpeada indistintamente por cualquier jugador en cualquier zona de la pista. A veces
-            solemos ver jugadores noveles intentando convencer a su compañero de no jugar en su “mitad”.
-
-            En el pádel para que la bola se considere buena debe tocar el suelo antes de impactar con las Paredes y/o
-            verja tras botar en el suelo excepto en el Servicio. Durante el transcurso de un punto la bola puede golpear
-            en paredes y verja. El jugador puede golpear la bola con o sin bote previo pero cumpulendo el máximo de un
-            bote para golpearla.
-
-            ¿Cuándo es bueno el saque de pádel y como se efectúa? Esta es una de las reglas del pádel más importantes,
-            el saque se considera bueno si la bola bota dentro del cuadro correspondiente tras ser golpeada por el
-            jugador al servicio. Al igual que en el tenis el saque debe ser cruzado, es decir, el jugador que sirve
-            desde la mitad derecha de su pista debe dirigir el mismo hacia el cuadrado a su izquierda de la pista rival.
-            A diferencia del tenis, en el pádel no se lanza la bola por encima de la cabeza para reaulzar el servicio.
-            En el pádel el jugador que reaulza el saque deja caer la bola a un lado del cuerpo y la golpeará sin que la
-            pala supere la altura de la cintura el momento del impacto. El saque genera dudas cuando la bola golpea en
-            la verja lateral. El saque puede dirigirse a cualquier zona del cuadro rival pero nunca puede golpear verja
-            lateral tras el bote. En cada punto que jugamos al servicio tenemos dos oportunidades para poner la bola en
-            juego.
-
-            Y cuando la saco y la bola toca la red y pasa al otro lado de la pista?. Si la bola tras el servicio toca la
-            red y pasa al otro lado de la pista se pueden dar varias situaciones:
-
-            Si tras tocar la red la bola no bota en el cuadro correspondiente será mal siempre.
-
-            Si tras tocar la red la bola bota en el cuadro correspondiente:
-
-            La bola bota una vez y no toca verja lateral: Se considera nula y el jugador tiene derecho a repetir ese
-            servicio.
-
-            La bola bota dos veces toca verja lateral: Se considera nula y el jugador tiene derecho a repetir ese
-            servicio.
-
-            La bola bota una vez toca verja lateral: Se considera mala y el jugador no tiene derecho a repetir ese
-            servicio.
-
-            Si la bola me roza/golpea tras el envío del rival o un rebote en paredes/verjas el punto lo gana el rival.
-
-            En ocasiones y de manera accidental la bola da dos toques en mi pala antes de enviarla al otro lado de la
-            pista. En ese caso el punto lo he perdido.
-
-            Nunca puedo golpear la bola si la pala no está sujeta por mi mano y tampoco está permitido jugar competición
-            sin que la pala este sujeta por el cordón que tiene al final de la empuñadura. Es muy importante
-            acostumbrarse a jugar desde el primer día con el cordón de la pala alrededor de la muñeca. Es una medida de
-            seguridad muy importante.
-
-            Si el rival golpea la bola con fuerza y:
-
-            La bola bota en la pista y sale fuera de esta. El punto se considera ganado por el jugador que la golpeo
-            aunque tenemos la posibiuldad de saulr y golpearla hacia adentro de la pista y al campo rival antes de el
-            segundo bote
-
-            Bota, toca la pared/paredes y/o verja y vuelve hacia el campo rival. El punto se considera ganado por el
-            jugador que la golpeo aunque tenemos la opción de golpearla incluso cuando haya superado la línea de la red
-            hacia su pista.
-
-            Si tocamos la red con mi pala, ropa o cualquier parte del cuerpo tras golpear la bola, el punto lo gana mi
-            rival.
-
-            Cómo se si una bola que bota justo en la unión entre el suelo y las paredes/verjas?. Las reglas del pádel
-            dicen que una bola que en esta situación bota con un ángulo de 45 grados se considera buena, pero nuestro
-            consejo es que en estas situaciones no debemos discutir con nuestro rival. Todo se arregla repitiendo el
-            punto.
-        </p>
-        <h3>Espero que con estos pequeños apuntes disfrutes y entiendas este maravilloso deporte.</h3>
 
     </section>
     <!--  /* SECCION REGLAS DEL PADEL(LUIS) FINAL*/-->
@@ -208,8 +390,8 @@
     <!-- Directorio clubes y pistas (sección Dani) -->
     <section class="Encuentra tu pista margenes">
         <h2>Encuentra tu pista</h2>
-        <div class="locaulzaciones">
-            <Div class="zona norte">
+        <div class="localizaciones">
+            <div class="zona norte">
                 <h3>Zona norte</h3>
                 <div>
                     <div>
@@ -262,7 +444,7 @@
 
                 </div>
             </div>
-            <Div class="zona centro">
+            <div class="zona centro">
                 <h3>Zona centro</h3>
                 <div>
                     <div>
@@ -303,9 +485,14 @@
                 </div>
 
             </div>
-            <Div class="zona sur">
+            <div class="zona sur">
                 <h3>Zona sur</h3>
-                <div></Div>div>
+                <div>
+                    <h4>Arganda del Rey</h4>
+                    <div class="pistaArganda">
+                        <h5>Mega Pádel Indoor</h5>
+                    </div>
+                </div>
                 <div>
                     <h4>Arroyomolinos</h4>
                     <div class="pistaArroyomolinos">
@@ -314,9 +501,9 @@
                 </div>
                 <div>
                     <h4>Rivas</h4>
-                </div>
-                <div>
-                    <h4>Arganda del Rey</h4>
+                    <div class="pistaRivas">
+                        <h5>Blue Pádel Rivas</h5>
+                    </div>
                 </div>
             </div>
         </div>
@@ -338,164 +525,152 @@
                             <img src="imagen2.jpg" alt="Imagen de un partido de pádel">
                         </div>
                     </section>
+        </section>
 
-                    <!-- sección galería de vídeos (Sección Carlo - Inicio) -->
+        <!-- sección galería de vídeos (Sección Carlo - Inicio) -->
 
-                    <section class="videos">
-                        <div class="galeria-videos">
-                            <h2>Clase</h2>
-                            <iframe width="1120" height="630"
-                                src="https://www.youtube.com/embed/3FVyVUxbyf0?si=ndr6ZdJ-mzoVTiN9"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; culpboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                            <iframe width="1120" height="630"
-                                src="https://www.youtube.com/embed/LtcDuIBtOJw?si=aHsi00ogEqS66VJh"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; culpboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                            <iframe width="1120" height="630"
-                                src="https://www.youtube.com/embed/Zay0LBlfX_o?si=AZ74jbbhlhtLs7Yb"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; culpboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                            <iframe width="1120" height="630"
-                                src="https://www.youtube.com/embed/Aw3ubv_G6nM?si=awASuygWQv-CMRz2"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; culpboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                            <iframe width="1120" height="630"
-                                src="https://www.youtube.com/embed/RC_DAeCsXwM?si=cRLk60dwbFDOcd79"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; culpboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                            <iframe width="1120" height="630"
-                                src="https://www.youtube.com/embed/pzs7rHAvRhY?si=HW1Jvjm0DBUXChwu"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; culpboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="navegacion">
-                            <button class="anterior">Anterior</button>
-                            <button class="siguiente">Siguiente</button>
-                        </div>
-                    </section>
+        <section class="videos">
+            <div class="galeria-videos">
+                <h2>Clase</h2>
+                <iframe width="1120" height="630" src="https://www.youtube.com/embed/3FVyVUxbyf0?si=ndr6ZdJ-mzoVTiN9"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; culpboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe width="1120" height="630" src="https://www.youtube.com/embed/LtcDuIBtOJw?si=aHsi00ogEqS66VJh"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; culpboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe width="1120" height="630" src="https://www.youtube.com/embed/Zay0LBlfX_o?si=AZ74jbbhlhtLs7Yb"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; culpboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe width="1120" height="630" src="https://www.youtube.com/embed/Aw3ubv_G6nM?si=awASuygWQv-CMRz2"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; culpboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe width="1120" height="630" src="https://www.youtube.com/embed/RC_DAeCsXwM?si=cRLk60dwbFDOcd79"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; culpboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe width="1120" height="630" src="https://www.youtube.com/embed/pzs7rHAvRhY?si=HW1Jvjm0DBUXChwu"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; culpboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="navegacion">
+                <button class="anterior">Anterior</button>
+                <button class="siguiente">Siguiente</button>
+            </div>
+        </section>
 
-                    <section class="consejos">
-                        <div class="entrenamientos">
-                            <h2>Consejos para entrenamientos de pádel</h2>
-                            <ol>
-                                <li>
-                                    <p>Aprende las reglas básicas: Famiularízate con las reglas básicas del pádel, como
-                                        las dimensiones de la pista, las reglas de saque y las faltas comunes.</p>
-                                </li>
-                                <li>
-                                    <p>Eulge la pala adecuada: Consulta con un experto para encontrar una pala que se
-                                        adapte a tu nivel y estilo de juego. No es necesario gastar mucho dinero en tu
-                                        primera pala, pero asegúrate de que sea de cauldad.</p>
-                                </li>
-                                <li>
-                                    <p>Aprende los golpes básicos: Practica los golpes fundamentales: derecha, revés,
-                                        volea y bandeja. Trabaja en tu técnica desde el principio.</p>
-                                </li>
-                                <li>
-                                    <p>Trabajo en equipo: Comunícate con tu compañero/a de juego. Coordina movimientos y
-                                        estrategias en la pista.</p>
-                                </li>
-                                <li>
-                                    <p>Ejercita tu condición física: El pádel requiere resistencia y agiuldad. Reaulza
-                                        ejercicios de cardio y trabaja en tu flexibiuldad y fuerza.</p>
-                                </li>
-                                <li>
-                                    <p>Conoce tu posición en la pista: Aprende dónde debes estar en cada momento durante
-                                        el partido para cubrir la mayor área posible.</p>
-                                </li>
-                                <li>
-                                    <p>Saque efectivo: Practica tu saque. Un buen saque puede marcar la diferencia en un
-                                        partido.</p>
-                                </li>
-                                <li>
-                                    <p>Juega con regularidad: Cuanto más juegues, más mejorarás. Intenta jugar
-                                        regularmente para adquirir experiencia y mejorar tus habiuldades.</p>
-                                </li>
-                                <li>
-                                    <p>Observa y aprende: Observa partidos de jugadores más experimentados para aprender
-                                        nuevas estrategias y tácticas.</p>
-                                </li>
-                                <li>
-                                    <p>Diviértete: Lo más importante es disfrutar del juego. No te preocupes demasiado
-                                        por ganar o perder en tus primeras partidas.</p>
-                                </li>
-                            </ol>
-                        </div>
-                    </section>
+        <section class="consejos">
+            <div class="entrenamientos">
+                <h2>Consejos para entrenamientos de pádel</h2>
+                <ol>
+                    <li>
+                        <p>Aprende las reglas básicas: Famiularízate con las reglas básicas del pádel, como
+                            las dimensiones de la pista, las reglas de saque y las faltas comunes.</p>
+                    </li>
+                    <li>
+                        <p>Eulge la pala adecuada: Consulta con un experto para encontrar una pala que se
+                            adapte a tu nivel y estilo de juego. No es necesario gastar mucho dinero en tu
+                            primera pala, pero asegúrate de que sea de cauldad.</p>
+                    </li>
+                    <li>
+                        <p>Aprende los golpes básicos: Practica los golpes fundamentales: derecha, revés,
+                            volea y bandeja. Trabaja en tu técnica desde el principio.</p>
+                    </li>
+                    <li>
+                        <p>Trabajo en equipo: Comunícate con tu compañero/a de juego. Coordina movimientos y
+                            estrategias en la pista.</p>
+                    </li>
+                    <li>
+                        <p>Ejercita tu condición física: El pádel requiere resistencia y agiuldad. Reaulza
+                            ejercicios de cardio y trabaja en tu flexibiuldad y fuerza.</p>
+                    </li>
+                    <li>
+                        <p>Conoce tu posición en la pista: Aprende dónde debes estar en cada momento durante
+                            el partido para cubrir la mayor área posible.</p>
+                    </li>
+                    <li>
+                        <p>Saque efectivo: Practica tu saque. Un buen saque puede marcar la diferencia en un
+                            partido.</p>
+                    </li>
+                    <li>
+                        <p>Juega con regularidad: Cuanto más juegues, más mejorarás. Intenta jugar
+                            regularmente para adquirir experiencia y mejorar tus habiuldades.</p>
+                    </li>
+                    <li>
+                        <p>Observa y aprende: Observa partidos de jugadores más experimentados para aprender
+                            nuevas estrategias y tácticas.</p>
+                    </li>
+                    <li>
+                        <p>Diviértete: Lo más importante es disfrutar del juego. No te preocupes demasiado
+                            por ganar o perder en tus primeras partidas.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
 
-                    <seccion class="preparacion">
-                        <div>
-                            <h2>Preparación física para jugar pádel</h2>
-                            <p>Antes de empezar a jugar pádel, es importante realizar un calentamiento adecuado para
-                                evitar lesiones. Puedes hacerlo de la siguiente manera:</p>
-                            <ol>
-                                <li>
-                                    <p><strong>Calentamiento cardiovascular:</strong> Realiza 5-10 minutos de actividad
-                                        cardiovascular ligera, como trotar suavemente o saltar la cuerda para elevar la
-                                        frecuencia cardíaca y preparar los músculos para el esfuerzo.</p>
-                                </li>
-                                <li>
-                                    <p><strong>Estiramientos dinámicos:</strong> Realiza estiramientos dinámicos para
-                                        calentar los músculos principales. Estiramientos de brazos, piernas, cuello y
-                                        espalda.</p>
-                                </li>
-                                <li>
-                                    <p><strong>Fortalecimiento del core:</strong> El pádel requiere movimientos rápidos
-                                        y giros, por lo que es importante fortalecer la zona central del cuerpo (core).
-                                        Realiza ejercicios como planchas y abdominales.</p>
-                                </li>
-                                <li>
-                                    <p><strong>Flexibilidad:</strong> Trabaja en la flexibilidad de tus músculos,
-                                        especialmente en los brazos y las piernas, para mejorar tu rango de movimiento
-                                        en la pista.</p>
-                                </li>
-                                <li>
-                                    <p><strong>Hidratación:</strong> Bebe suficiente agua antes de jugar para mantenerte
-                                        hidratado durante la actividad.</p>
-                                </li>
-                                <li>
-                                    <p><strong>Ropa adecuada:</strong> Usa ropa cómoda y adecuada para la actividad
-                                        deportiva, incluyendo zapatillas de deporte con buena sujeción y agarre.</p>
-                                </li>
-                            </ol>
-                            <p>Recuerda que jugar pádel puede ser exigente, así que escucha a tu cuerpo y no te exijas
-                                demasiado. Disfruta del juego y, si es posible, toma clases para aprender las técnicas
-                                básicas. ¡Diviértete!</p>
-                        </div>
-                    </seccion>
+        <seccion class="preparacion">
+            <div>
+                <h2>Preparación física para jugar pádel</h2>
+                <p>Antes de empezar a jugar pádel, es importante realizar un calentamiento adecuado para
+                    evitar lesiones. Puedes hacerlo de la siguiente manera:</p>
+                <ol>
+                    <li>
+                        <p><strong>Calentamiento cardiovascular:</strong> Realiza 5-10 minutos de actividad
+                            cardiovascular ligera, como trotar suavemente o saltar la cuerda para elevar la
+                            frecuencia cardíaca y preparar los músculos para el esfuerzo.</p>
+                    </li>
+                    <li>
+                        <p><strong>Estiramientos dinámicos:</strong> Realiza estiramientos dinámicos para
+                            calentar los músculos principales. Estiramientos de brazos, piernas, cuello y
+                            espalda.</p>
+                    </li>
+                    <li>
+                        <p><strong>Fortalecimiento del core:</strong> El pádel requiere movimientos rápidos
+                            y giros, por lo que es importante fortalecer la zona central del cuerpo (core).
+                            Realiza ejercicios como planchas y abdominales.</p>
+                    </li>
+                    <li>
+                        <p><strong>Flexibilidad:</strong> Trabaja en la flexibilidad de tus músculos,
+                            especialmente en los brazos y las piernas, para mejorar tu rango de movimiento
+                            en la pista.</p>
+                    </li>
+                    <li>
+                        <p><strong>Hidratación:</strong> Bebe suficiente agua antes de jugar para mantenerte
+                            hidratado durante la actividad.</p>
+                    </li>
+                    <li>
+                        <p><strong>Ropa adecuada:</strong> Usa ropa cómoda y adecuada para la actividad
+                            deportiva, incluyendo zapatillas de deporte con buena sujeción y agarre.</p>
+                    </li>
+                </ol>
+                <p>Recuerda que jugar pádel puede ser exigente, así que escucha a tu cuerpo y no te exijas
+                    demasiado. Disfruta del juego y, si es posible, toma clases para aprender las técnicas
+                    básicas. ¡Diviértete!</p>
+            </div>
+        </seccion>
 
-                    <footer>
-
-                        <div class="copyright">
-                            <img src="img/LOGO PROPADEL.png">
-                            <p>Madrid, España</p>
-                            <a href="mailto:info@propadel.com">info@propadel.com</a>
-                            <div class="redes">
-                                <a href="facebook.com"><img src="img/facebook.png"></a>
-                                <a href="instagram.com"><img src="img/instagram.png"></a>
-                                <a href="twitter.com"><img src="img/twitter.png"></a>
-                                <a href="youtube.com"><img src="img/youtube.png"></a>
-                            </div>
-                            <p></p>2023 ©ProPadel
-                        </div>
-                    </footer>
-                    <!-- <h2>Contacto</h2> -->
-                    <!-- <p>¿Tienes alguna pregunta o comentario? Contáctanos en </p>  -->
-
-
-                    </footer>
-                    <script src="js/scripts.js"></script>
-                    <!-- <-- Sección Carlo - Final -->
-                    <section class="contacto margenes">
-                    </section>
-
+        <footer>
+            <div class="copyright">
+                <img src="img/LOGO PROPADEL.png">
+                <p>Madrid, España</p>
+                <a href="mailto:info@propadel.com">info@propadel.com</a>
+                <div class="redes">
+                    <a href="facebook.com"><img src="img/facebook.png"></a>
+                    <a href="instagram.com"><img src="img/instagram.png"></a>
+                    <a href="twitter.com"><img src="img/twitter.png"></a>
+                    <a href="youtube.com"><img src="img/youtube.png"></a>
+                </div>
+                <p>2023 ©ProPadel</p>
+            </div>
+        </footer>
+        <!-- <h2>Contacto</h2> -->
+        <!-- <p>¿Tienes alguna pregunta o comentario? Contáctanos en </p>  -->
+        <script src="js/scripts.js"></script>
+        <!-- <-- Sección Carlo - Final -->
 </body>
 
 </html>
