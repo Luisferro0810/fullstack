@@ -355,23 +355,31 @@ for (let i = 0; i <= 3; i++) {
 }
 
 // EJERCICIO, MOSTRAR DEL 100 AL 200 POR PANTALLA
-for (let i = 100; i <= 200; i++) {
+for (let i = 100; i <= 200; i++) {  
     console.log(`El numero ${i} está entre el 100 y el 200`);
 } // :) 
 
+for (let indexIndice = 2; indexIndice <= 49; indexIndice+=2){
+    console.log(`mostando los numeros pares del 2 al 49: ${indexIndice}`);
+}
+
 // PODEMOS USAR LOS COMPARADORES YA VISTOS, ===,<=,>=,<,>!==
 
-/*
-!!!!!!!!!!!!!!!!
-EJERCICIO5
-MOSTRAR EN ORDEN DESCENDENTE DEL 100 HASTA EL 0, PERO
-DE 5 EN 5
-INCLUIDOS AMBOS
+// /*
+// !!!!!!!!!!!!!!!!
+// EJERCICIO5 
+// MOSTRAR EN ORDEN DESCENDENTE DEL 100 HASTA EL 0, PERO
+// DE 5 EN 5
+// INCLUIDOS AMBOS
+// */
 
-*/
 for (let i = 100; i >= 0; i -= 5) {
     console.log("De 100 a 0 de 5 en 5:", i)
 };
+
+for (let indexIndice = 100; indexIndice <=0; indexIndice -=5){
+    console.log(`mostrando por consola los numeros de 100 a 0 de 5 en 5: ${indexIndice}`)
+}
 
 /*
 !!!!!!!!!!!!!!!
@@ -387,14 +395,24 @@ for (let k = 1; k <= 20; k++) {
     }
 }
 
+for (let indexIndice = 1; indexIndice <=20; indexIndice ++){
+    if(indexIndice %2===0){
+        console.log(`numero pares desde 1 a 20:${indexIndice}`)
+    }
+   
+}
+
 // for (let t = 1; t<=20, t%2===0; t++ ){
 //     console.log("numeros pares t",t)
 // }
 /*
-
 COPIAMOS EL ARRAY DE OBJETOS carrito
-
 */
+  
+let arrayNumeros=[1,2,3,4,5,6,7,8,9];
+for(indexIndice= 0; indexIndice<arrayNumeros.length; indexIndice++){
+console.log(`buscando en el array con metodo length:${arrayNumeros[indexIndice]}`)
+}
 
 let carrito = [
     {
@@ -514,5 +532,59 @@ while (k <= 20) {
     }
     k++;
 }
+
+/*
+!!!!!!!!!!!!!!
+EJERCICIO9
+CREAR UNA FUNCION QUE DADO UN ARGUMENTO ME DIGA SI
+* ES POSITIVO
+* ES NEGATIVO
+* ES =0
+*/
+  
+function ejercicio9(n1) {
+    if (n1 < 0) {
+        console.log("El número es negativo:", n1)
+    } else if (n1 > 0) {
+        console.log("El número es positivo:", n1)
+    } else {
+        console.log("El número es 0:", n1)
+    }
+}
+ejercicio9(13);
+ejercicio9(-34535435);
+ejercicio9(0)
+
+/*
+!!!!!!!!!!!!!
+EJERCICIO10
+CREAR UNA FUNCIÓN que se llame "regresion"QUE DADO UN ARGUMENTO, (NUMERO ENTERO)
+ME DE UNA CUENTA ATRÁS DE LOS NÚMEROS
+*/
+
+function ejercicio10(y){
+    for (let i=y; i>=10;i--){
+        console.log(`mostrando funcion:${i}`);
+    }
+}
+ejercicio10(13)
+
+/*
+!!!!!!!!!!!!!
+EJERCICIO11
+CREAR UNA FUNCIÓN QUE DADO UN ARGUMENTO DE ENTRADA N, ME
+DE LA SUMA DE TODOS LOS NUMEROS ENTRE 0 Y N
+*/
+let totalAcumulacion=0;
+function acumulacion(n){
+    for(let i=n;i>=0;i--){
+        totalAcumulacion=totalAcumulacion+i; 
+    }
+        console.log(totalAcumulacion);
+}
+acumulacion(16)
+
+
+
 
 
