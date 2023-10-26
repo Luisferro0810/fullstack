@@ -240,3 +240,4 @@ console.log(miCoche.calculaEdad());
 
 const cochePapa = new Coche("mini morris",1200,null,"2322pd");
 console.log(cochePapa); */ 
+
