@@ -1,9 +1,8 @@
  /* root sirve para crear una variable para todo el codigo */
  :root {
-     --colorPrincipal: #ffd700;
-     --colorSecundario: #18171c;
-     /*tipo de fuente de google font (ejemplo)  --fuentePrincipal: 'Skranji', cursive;*/
-     --fuentePrincipal:'Roboto Mono', monospace;
+    --colorPrincipal: #00ff00; /* Verde brillante */
+    --colorSecundario: #000000; /* Negro */
+    --fuentePrincipal:'Fira Code', monospace; /* Fuente similar a la de The Matrix */
 
  }
 
@@ -14,9 +13,36 @@
  body {
     font-size: 16px;
     font-family: var(--fuentePrincipal);
-    font-weight: var();
-    background-color: #ffd700;
+    background-color: var(--colorSecundario);
+    color: var(--colorPrincipal);
  }
+
+ body::before { /*Añade un fondo de código cayendo*/
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: url('../img/gif\ animado\ MATRIX2.gif') center/cover fixed;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+body.fade {
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Ajusta la duración y el efecto según sea necesario */
+}
+ 
+a{text-decoration: none;
+    color: red;
+
+}
+a:hover {
+    color: #00ff00; /* Cambia esto al color deseado */
+    transition: color 0.3s ease-in-out;
+}
 
  .contenedor {
     max-width: 0%;
@@ -24,4 +50,198 @@
 }
 
 
- 
+
+
+/*Seccion Header*/
+header {
+    background: url('../img/redpill-redpillart.gif') center/cover;
+    color: var(--colorPrincipal);
+    padding: 20px;
+    text-align: center;
+}
+
+/*section experience*/
+section {
+    padding: 40px;
+}
+
+h2 {
+    color: var(--colorPrincipal);
+}
+/*section education*/
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+/*section project*/
+.project {
+    border-bottom: 1px solid var(--colorPrincipal);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.projects h3 {
+    color: var(--colorPrincipal);
+}
+
+/*Section Skills*/
+.skills {
+    padding: 20px;
+}
+
+.skills h2 {
+    color: var(--colorPrincipal);
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    margin-bottom: 10px;
+}
+
+/*Section Contact*/
+.contact {
+    padding: 40px;
+    text-align: center;
+    background-color: var(--colorSecundario);
+    color: var(--colorPrincipal);
+}
+
+.contact a {
+    color: var(--colorPrincipal);
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+form {
+    background-color: #444444;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 50px auto;
+  }
+  
+  .lb {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .infos[type="text"], input[type="email"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #333333;
+    color: white;
+  }
+  
+  #send {
+    --glow-color: rgb(176, 255, 189);
+    --glow-spread-color: rgba(123, 255, 160, 0.781);
+    --enhanced-glow-color: rgb(182, 175, 71);
+    --btn-color: rgba(13, 241, 21, 0.508);
+    border: .25em solid var(--glow-color);
+    padding: 1em 2em;
+    color: var(--glow-color);
+    font-size: 14px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+          0 0 4em 1em var(--glow-spread-color),
+          inset 0 0 .05em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+  }
+  
+  #send::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+  }
+  
+  #send:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+          0 0 4em 2em var(--glow-spread-color),
+          inset 0 0 .75em .25em var(--glow-color);
+  }
+  
+  #send:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+          0 0 2.5em 2em var(--glow-spread-color),
+          inset 0 0 .5em .25em var(--glow-color);
+  }
+  
+  #limpar {
+    --glow-color: rgb(255, 176, 176);
+    --glow-spread-color: rgba(255, 123, 123, 0.781);
+    --enhanced-glow-color: rgb(182, 175, 71);
+    --btn-color: rgba(241, 13, 13, 0.508);
+    border: .25em solid var(--glow-color);
+    padding: 1em 2em;
+    color: var(--glow-color);
+    font-size: 14px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+          0 0 4em 1em var(--glow-spread-color),
+          inset 0 0 .05em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+  }
+  
+  #limpar::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+  }
+  
+  #limpar:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+          0 0 4em 2em var(--glow-spread-color),
+          inset 0 0 .75em .25em var(--glow-color);
+  }
+  
+  #limpar:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+          0 0 2.5em 2em var(--glow-spread-color),
+          inset 0 0 .5em .25em var(--glow-color);
+  }
