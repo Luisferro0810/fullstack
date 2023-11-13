@@ -32,11 +32,13 @@
         <h1>Luis Alejandro Ferro Cruz</h1>
         <h2>Sobre Mí</h2>
         <p>¡Hola! Soy Luis Alejandro Ferro Cruz, un apasionado recién llegado al mundo de la programación web...</p>
-
+        <img class="photoPerfil" src="./img/img photoPerfil.jpg" alt="">
         <!-- Agrega esto a tus enlaces -->
         <a href="https://fonts.google.com/" onclick="event.preventDefault(); fadePage('https://fonts.google.com/')">Ir a
             Google Fonts</a>
-
+            <!-- <div class="glitch-container">
+                <img class="glitch-image" src="./img/img photoPerfil.jpg" alt="Descripción de la imagen">
+              </div> -->
         <!-- Agrega esta función JavaScript -->
         <script>
             function fadePage(url) {
@@ -152,14 +154,15 @@
             <button type="submit">Enviar Mensaje</button>
         </form> -->
             <form class="form">
-                <label class="lb" for="nome">Name:</label>
-                <input name="nome" id="nome" type="text" class="infos">
+                <label class="lb" for="nome">Nombre:</label>
+                <input name="nome" id="nome" type="text" class="infos" text="required" placeholder="ingresa tu nombre...">
+               
+                <label for="email" class="lb">Correo Electrónico:</label>
+                <input id="email" placeholder="Ingresa tu correo electrónico..." type="email" name="_replyto" required="required">
 
-                <label for="email" class="lb">E-mail:</label>
-                <input name="email" id="email" type="email" class="infos">
-
-                <label for="data" class="lb">Date:</label>
-                <input name="data" id="data" type="date" class="infos">
+                <label for="data" class="lb">Mensaje:</label>
+                <input name="data" id="data" type="text" class="infos">
+                
 
                 <button id="send" type="submit">Send</button>
                 <button id="limpar" type="reset">Clear </button>
