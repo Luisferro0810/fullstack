@@ -29,198 +29,194 @@
 
 <body>
     <header>
-        <h1>Luis Alejandro Ferro Cruz</h1>
+        <h1 class="glitch">Luis Alejandro Ferro Cruz</h1>
         <h2>Sobre Mí</h2>
         <p>¡Hola! Soy Luis Alejandro Ferro Cruz, un apasionado recién llegado al mundo de la programación web...</p>
-        <img class="photoPerfil" src="./img/img photoPerfil.jpg" alt="">
         <!-- Agrega esto a tus enlaces -->
-        <a href="https://fonts.google.com/" onclick="event.preventDefault(); fadePage('https://fonts.google.com/')">Ir a
-            Google Fonts</a>
-            <!-- <div class="glitch-container">
-                <img class="glitch-image" src="./img/img photoPerfil.jpg" alt="Descripción de la imagen">
-              </div> -->
-        <!-- Agrega esta función JavaScript -->
-        <script>
-            function fadePage(url) {
-                document.body.classList.add('fade');
-                setTimeout(function () {
-                    window.location.href = url;
-                }, 1000); // Ajusta el tiempo de transición según sea necesario
-            }
-        </script>
-
-
+        <!-- <a href="https://fonts.google.com/" onclick="event.preventDefault(); fadePage('https://fonts.google.com/')">Ir a
+            Google Fonts</a> -->
+        <div class="glitch-container">
+            <img class="fotoPerfil" src="./img/img photoPerfil.jpg" alt="fotoPerfil">
+        </div>
     </header>
     <main>
+        <section class="experience">
+            <h2>Experiencia Laboral</h2>
+            <ul>
+                <li>
+                    <h3><strong>Coordinador de Flota</strong> - Empresa de Transporte de Autos para Renta
+                        CUBACAR-TRANSTUR</h3>
+                    <p>Administrar y supervisar la flota de autos, aplicando soluciones ofimáticas para una gestión
+                        eficiente. Realizar tareas administrativas y gestionar la base de datos de vehículos para
+                        garantizar su disponibilidad y mantenimiento.</p>
 
+                </li>
+                <li>
+                    <h3><strong>Especialista en Reservas y Atención al Cliente</strong> - Empresa de Transporte de Autos
+                        para Renta CUBACAR-TRANSTUR</h3>
+                    <p>Gestionar las reservas de clientes, brindar asistencia telefónica en la vía 24 horas y ofrecer un
+                        servicio personalizado. Aplicar conocimientos de inglés para comunicarse con clientes turistas
+                        extranjeros de diversas nacionalidades.</p>
+
+                </li>
+                <li>
+                    <h3><strong>Supervisor de Asistencia en Ruta</strong> - Empresa de Transporte de Autos para Renta
+                        CUBACAR-TRANSTUR</h3>
+                    <p>Coordinar la asistencia en ruta, brindar soporte telefónico y resolver problemas operativos en
+                        tiempo real. Aplicar habilidades de comunicación en inglés para atender a clientes
+                        internacionales.</p>
+                    <button class="botonDesplegable">Ver Más</button>
+                </li>
+            </ul>
+        </section>
+
+        <section class="education">
+            <h2>Educación</h2>
+            <p>Curso de Desarrollo Web (3 Meses) - ADECCO tu carrera digital</p>
+            <p>Curso de Introducción a la Informática - Instituto Tecnológico Local</p>
+            <p>Diplomado en Ofimática Avanzada - Centro de Formación Digital</p>
+            <p>Programación en Python para Principiantes - Plataforma de Cursos en Línea</p>
+            <p>Certificación en Fundamentos de HTML y CSS - Academia de Desarrollo Web</p>
+            <p>Curso de Inglés Intermedio - Escuela de Idiomas Internacional</p>
+            <p>Programa Intensivo de Inglés Avanzado - Centro de Aprendizaje de Idiomas</p>
+            <p>Prácticas en Comunicación en Inglés - Experiencia de 2 años en entorno profesional</p>
+            <button class="botonDesplegable">Ver Más</button>
+        </section>
+
+        <section class="skills" id="skills">
+            <h2>Habilidades</h2>
+
+            <ul class="contenidoDesplegable" style="max-height: 100px; overflow: hidden;">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+            </ul>
+            <ul class="contenidoCompleto" style="display: none;">
+                <li>Responsive Design</li>
+                <li>Python (Fundamental)</li>
+                <li>Java (Básico)</li>
+                <li>SQL Básico</li>
+                <li>Manejo de Bases de Datos Relacionales</li>
+                <li>Inglés Comunicativo Intermedio</li>
+                <li>Control de Versiones con Git</li>
+                <li>Marketing Digital (Básico)</li>
+                <li>Atención al Cliente personalizada</li>
+            </ul>
+            <button class="botonDesplegable" onclick="toggleDesplegable('skills')">Ver Más...</button>
+        </section>
+
+        <section class="projects">
+            <h2>Proyectos Destacados</h2>
+            <div class="project">
+                <h3>Página de Inicio de Blog Personal (HTML/CSS)</h3>
+                <p>Desarrollé una página de inicio interactiva para mi blog personal, utilizando HTML y CSS para crear
+                    una experiencia de usuario atractiva y amigable.</p>
+
+            </div>
+            <div class="project">
+                <h3>Calculadora Interactiva (JavaScript)</h3>
+                <p>Diseñé una calculadora funcional que permite a los usuarios realizar operaciones matemáticas básicas,
+                    utilizando JavaScript para la lógica y el comportamiento interactivo.</p>
+            </div>
+            <div class="project">
+                <h3>Control de Flota de Autos para Renta Turística (Base de Datos Ofimática)</h3>
+                <p>Implementé una base de datos en una suite de ofimática para gestionar el control de una flota de
+                    autos destinada a la renta turística. La base de datos facilita la organización de información sobre
+                    vehículos, disponibilidad y reservas para mejorar la eficiencia en la gestión.</p>
+                <button class="botonDesplegable">Ver Más</button>
+            </div>
+        </section>
+
+        <section class="contact ">
+            <div>
+                <h2>Contacto</h2>
+                <p>Email: luisferroc10@gmail.com</p>
+                <p>Teléfono: 641 03 78 72</p>
+            </div>
+            <div>
+                <h2>Envíame un mensaje</h2>
+                <h4>Hazme una pregunta, propuesta <br> o simplemente saluda...</h4>
+
+                <form class="form">
+                    <label class="lb" for="nome">Nombre:</label>
+                    <input name="nome" id="nome" type="text" class="infos" required placeholder="Ingresa tu nombre...">
+
+                    <label for="email" class="lb">Correo Electrónico:</label>
+                    <input id="email" type="email" name="_replyto" required
+                        placeholder="Ingresa tu correo electrónico...">
+
+                    <label for="data" class="label">Mensaje:</label>
+                    <textarea name="data" id="data" class="message" required
+                        placeholder="Escribe tu mensaje aquí..."></textarea>
+
+                    <button id="send" type="submit">Enviar</button>
+                    <button id="limpar" type="reset">Borrar</button>
+                </form>
+
+            </div>
+        </section>
     </main>
-    <section class="experience">
-        <h2>Experiencia Laboral</h2>
-        <ul>
-            <li>
-                <h3><strong>Coordinador de Flota</strong> - Empresa de Transporte de Autos para Renta CUBACAR-TRANSTUR
-                </h3>
-                <p>Administrar y supervisar la flota de autos, aplicando soluciones ofimáticas para una gestión
-                    eficiente.
-                    Realizar tareas administrativas y gestionar la base de datos de vehículos para garantizar su
-                    disponibilidad y mantenimiento.</p>
-            </li>
-            <li>
-                <h3><strong>Especialista en Reservas y Atención al Cliente</strong> - Empresa de Transporte de Autos
-                    para Renta CUBACAR-TRANSTUR</h3>
-                <p>Gestionar las reservas de clientes, brindar asistencia telefónica en la vía 24 horas y ofrecer un
-                    servicio personalizado. Aplicar conocimientos de inglés para comunicarse con clientes turistas
-                    extranjeros de diversas nacionalidades.</p>
-            </li>
-            <li>
-                <h3><strong>Supervisor de Asistencia en Ruta</strong> - Empresa de Transporte de Autos para Renta
-                    CUBACAR-TRANSTUR</h3>
-                <p>Coordinar la asistencia en ruta, brindar soporte telefónico y resolver problemas operativos en tiempo
-                    real. Aplicar habilidades de comunicación en inglés para atender a clientes internacionales.</p>
-            </li>
-        </ul>
-    </section>
-
-    <section class="education">
-        <h2>Educación</h2>
-        <p>Curso de Desarrollo Web (3 Meses) - ADECCO tu carrera digital</p>
-        <p>Curso de Introducción a la Informática - Instituto Tecnológico Local</p>
-        <p>Diplomado en Ofimática Avanzada - Centro de Formación Digital</p>
-        <p>Programación en Python para Principiantes - Plataforma de Cursos en Línea</p>
-        <p>Certificación en Fundamentos de HTML y CSS - Academia de Desarrollo Web</p>
-        <p>Curso de Inglés Intermedio - Escuela de Idiomas Internacional</p>
-        <p>Programa Intensivo de Inglés Avanzado - Centro de Aprendizaje de Idiomas</p>
-        <p>Prácticas en Comunicación en Inglés - Experiencia de 2 años en entorno profesional</p>
-    </section>
-
-    <section class="skills">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>Responsive Design</li>
-            <li>Python (Fundamental)</li>
-            <li>Java (Básico)</li>
-            <li>SQL Básico</li>
-            <li>Manejo de Bases de Datos Relacionales</li>
-            <li>Inglés Comunicativo Intermedio</li>
-            <li>Control de Versiones con Git</li>
-            <li>Marketing Digital (Básico)</li>
-            <li>Atención al Cliente personalizada</li>
-        </ul>
-    </section>
-
-    <section class="projects">
-        <h2>Proyectos Destacados</h2>
-        <div class="project">
-            <h3>Página de Inicio de Blog Personal (HTML/CSS)</h3>
-            <p>Desarrollé una página de inicio interactiva para mi blog personal, utilizando HTML y CSS para crear una
-                experiencia de usuario atractiva y amigable.</p>
-        </div>
-        <div class="project">
-            <h3>Calculadora Interactiva (JavaScript)</h3>
-            <p>Diseñé una calculadora funcional que permite a los usuarios realizar operaciones matemáticas básicas,
-                utilizando JavaScript para la lógica y el comportamiento interactivo.</p>
-        </div>
-        <div class="project">
-            <h3>Control de Flota de Autos para Renta Turística (Base de Datos Ofimática)</h3>
-            <p>Implementé una base de datos en una suite de ofimática para gestionar el control de una flota de autos
-                destinada a la renta turística. La base de datos facilita la organización de información sobre
-                vehículos,
-                disponibilidad y reservas para mejorar la eficiencia en la gestión.</p>
-        </div>
-    </section>
-    <section class="contact">
-        <div>
-            <h2>Contacto</h2>
-            <p>Email: luisferroc10@gmail.com</p>
-            <p>Teléfono: 641 03 78 72</p>
-        </div>
-        <div>
-            <h2>Envíame un mensaje</h2>
-            <h4>Hazme una pregunta, propuesta <br> o simplemente saluda...</h4>
-            <!-- <form action="tu-script-de-procesamiento.php" method="post"> //aqui va un script de procesamiento ver)// -->
-            <!-- <form action="tu-script-de-procesamiento.php" method="post"></form>
-            <label for="nombre">Tu Nombre</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="email">Tu Correo Electrónico</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="mensaje">Tu Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-            <button type="submit">Enviar Mensaje</button>
-        </form> -->
-            <form class="form">
-                <label class="lb" for="nome">Nombre:</label>
-                <input name="nome" id="nome" type="text" class="infos" text="required" placeholder="ingresa tu nombre...">
-               
-                <label for="email" class="lb">Correo Electrónico:</label>
-                <input id="email" placeholder="Ingresa tu correo electrónico..." type="email" name="_replyto" required="required">
-
-                <label for="data" class="lb">Mensaje:</label>
-                <input name="data" id="data" type="text" class="infos">
-                
-
-                <button id="send" type="submit">Send</button>
-                <button id="limpar" type="reset">Clear </button>
-            </form>
-        </div>
-    </section>
     <footer>
         <div>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="30"
-                height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
-                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-                <path d="M16.5 7.5l0 .01"></path>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="30"
-                height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="30"
-                height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z"></path>
-                <path d="M10 9l5 3l-5 3z"></path>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="30"
-                height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path
-                    d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z">
-                </path>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="30"
-                height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path
-                    d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5">
-                </path>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="30"
-                height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
-                <path d="M8 11l0 5"></path>
-                <path d="M8 8l0 .01"></path>
-                <path d="M12 16l0 -5"></path>
-                <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
-            </svg>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="instagram" width="30" height="30" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                    <path d="M16.5 7.5l0 .01"></path>
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="facebook" width="30" height="30" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="youtube" width="30" height="30" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z"></path>
+                    <path d="M10 9l5 3l-5 3z"></path>
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="twitter" width="30" height="30" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z">
+                    </path>
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="github" width="30" height="30" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                        d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5">
+                    </path>
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="linkedin" width="30" height="30" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+                    <path d="M8 11l0 5"></path>
+                    <path d="M8 8l0 .01"></path>
+                    <path d="M12 16l0 -5"></path>
+                    <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+                </svg>
+            </a>
         </div>
     </footer>
-
+    <!-- <script>
+        alert("alert")
+    </script> alerta (muesta una alerta en tu pagina web) -->
+    <script src="./js/proyectoPersonalPORTFOLIO.js"></script>
 </body>
 
 </html>
